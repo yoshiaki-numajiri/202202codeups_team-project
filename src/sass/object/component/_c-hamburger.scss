@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.c-hamburger {
+	width: 100%;
+	@include mq(md) {
+		display: none;
+	}
+}
+
+.c-hamburger__line {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: rem(2);
+}
