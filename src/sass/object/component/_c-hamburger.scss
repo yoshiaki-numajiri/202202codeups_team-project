@@ -5,6 +5,7 @@
 	align-items: center;
 	justify-content: center;
 	height: 100%;
+	height: 50px;
 	@include mq(md) {
 		display: none;
 	}
@@ -49,12 +50,6 @@
 /***** メニューオープン時 *****/
 .c-hamburger__line.is-open {
 	background-color: transparent;
-}
-
-.c-hamburger.is-open .c-hamburger__line::before ,
-.c-hamburger.is-open .c-hamburger__line::after {
-	content: "";
-	transition: .2s;
 }
 
 .c-hamburger.is-open .c-hamburger__line::before {
