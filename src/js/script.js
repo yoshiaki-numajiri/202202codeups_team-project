@@ -32,10 +32,10 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     }
   });
 
-  //ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('open');
-    $('.menu').toggleClass('open');
+  // ドロワーメニュー
+  $('.js-hamburger').on('click', function () {
+    $(this).toggleClass('is-open');
+    $('.menu').toggleClass('is-open');
   });
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
