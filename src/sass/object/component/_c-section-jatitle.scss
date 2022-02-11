@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.c-section-jatitle {
+  font-family: "Noto Sans JP";
+  @include txt(rem(20), 300, #fff, center);
+  @include txt-option(1, 2px);
+  @include mq(md) {
+    font-size: rem(30);
+  }
+}
