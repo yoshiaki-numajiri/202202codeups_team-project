@@ -34,7 +34,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // ドロワーメニュー
   $('.navbar_toggle').on('click', function () {
-    $(this).toggleClass('is-open');
+    $('c-hamburger__line').toggleClass('is-open');
     $('.menu').toggleClass('is-open');
   });
 
