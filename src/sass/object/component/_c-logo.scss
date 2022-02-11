@@ -2,7 +2,7 @@
 
 .c-logo {
   width: rem(70);
-  @include mq(md){
+  @include mq(md) {
     width: rem(94);
   }
 }
