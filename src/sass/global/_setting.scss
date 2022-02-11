@@ -31,11 +31,12 @@ $padding-sp: 20px;
   letter-spacing: $letter-spacing;
 }
 
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: 'Noto Sans JP', sans-serif;
+$second-font-family: 'Noto Serif JP', serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
+  background-color: $black1;
   font-family: $base-font-family;
 }
 
