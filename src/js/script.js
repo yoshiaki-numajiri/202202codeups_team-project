@@ -33,7 +33,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   // ドロワーメニュー
-  $('.navbar_toggle').on('click', function () {
+  $('.js-hamburger').on('click', function () {
     $('c-hamburger__line').toggleClass('is-open');
     $('.menu').toggleClass('is-open');
   });
