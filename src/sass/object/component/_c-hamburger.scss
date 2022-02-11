@@ -51,16 +51,16 @@
 	background-color: transparent;
 }
 
-.c-hamburger__line.is-open::before ,
-.c-hamburger__line.is-open::after {
+.c-hamburger.is-open .c-hamburger__line::before ,
+.c-hamburger.is-open .c-hamburger__line::after {
 	content: "";
 	transition: .2s;
 }
 
-.header__line.is-open::before {
+.c-hamburger.is-open .c-hamburger__line::before {
 	transform: rotate(45deg);
 }
 
-.header__line.is-open::after {
+.c-hamburger.is-open .c-hamburger__line::after {
 	transform: rotate(-45deg);
 }
