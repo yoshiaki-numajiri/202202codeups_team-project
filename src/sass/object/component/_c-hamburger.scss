@@ -48,7 +48,7 @@
 }
 
 /***** メニューオープン時 *****/
-.c-hamburger__line.is-open {
+.c-hamburger.is-open .c-hamburger__line {
 	background-color: transparent;
 }
 
