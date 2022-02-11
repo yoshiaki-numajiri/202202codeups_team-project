@@ -2,8 +2,7 @@
 
 .c-logo {
   width: rem(70);
-  z-index: 9999;
-  @include mq('tab'){
+  @include mq(md){
     width: rem(94);
   }
 }
