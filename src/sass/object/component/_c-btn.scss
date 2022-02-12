@@ -1,7 +1,55 @@
 @use "global" as *;
+@use "sass:math";
 
 .c-btn {
-  padding: rem(10) rem(40);
-  background-color: black;
-  color: yellow;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  height: rem(50);
+  width: 100%;
+  background-color: $black3;
+  border: 1px solid $white;
+  @include txt(rem(20), 400, $white, center);
+  @include txt-option(rem(50), math.div(2em, 20));
+  text-indent: math.div(2em, 20);
+  @include mq() {
+    height: rem(54);
+    width: rem(360);
+    @include txt(rem(16), 500, $white, center);
+    @include txt-option(rem(50), math.div(2, 16));
+  }
+}
+
+.c-btn::before {
+  @include mq() {
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: $white;
+    border: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+  }
+}
+
+.c-btn:hover {
+  color: $black0;
+}
+
+.c-btn:hover::before {
+  transform: translateX(0);
+}
+
+.c-btn--pc-small {
+  @include mq() {
+    height: rem(30);
+    width: rem(134);
+    background-color: $white;
+    border: 0;
+    color: $black0;
+  }
 }
