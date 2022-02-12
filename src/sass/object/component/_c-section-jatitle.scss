@@ -2,9 +2,10 @@
 
 .c-section-jatitle {
   font-family: "Noto Sans JP";
-  @include txt(rem(20), 300, #fff, center);
-  @include txt-option(1, 2px);
+  @include txt(rem(20), $regular, $white, center);
+  @include txt-option(1, 0.1em); // 2px/fsz20
   @include mq(md) {
     font-size: rem(30);
+    @include txt-option(1.167, 0.067em); // 35/fsz30, 2px/fsz30
   }
 }
