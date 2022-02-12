@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .c-section-jatitle {
-  font-family: "Noto Sans JP";
   @include txt(rem(20), $regular, $white, center);
   @include txt-option(1, 0.1em); // 2px/fsz20
   @include mq(md) {
