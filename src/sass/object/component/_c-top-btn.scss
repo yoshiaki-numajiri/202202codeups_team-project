@@ -1,0 +1,46 @@
+@use "global" as *;
+
+.c-top-btn {
+  display: block;
+  position: fixed;
+  right: rem(20);
+  bottom: rem(30);
+  z-index: 10;
+}
+
+.c-top-btn a {
+  display: block;
+  width: 45px;
+  height: 45px;
+  padding: rem(16.5) rem(10.5);
+  text-align: center;
+  text-decoration: none;
+  background: $white;
+}
+
+.c-top-btn a::after {
+  display: inline-block;
+  content: "";
+  width: rem(18);
+  height: rem(18);
+  border-top: 2px solid $black3;
+  border-left: 2px solid $black3;
+  transform: rotate(45deg);
+}
+
+.c-top-btn a:focus,
+.c-top-btn a:hover {
+  background: $black3;
+  transition: 0.3s;
+}
+
+.c-top-btn a:focus::after,
+.c-top-btn a:hover::after {
+  display: inline-block;
+  content: "";
+  width: rem(18);
+  height: rem(18);
+  border-top: 2px solid $white;
+  border-left: 2px solid $white;
+  transform: rotate(45deg);
+}
