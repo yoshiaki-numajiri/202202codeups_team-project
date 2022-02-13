@@ -5,8 +5,11 @@
   display: block;
   position: relative;
   overflow: hidden;
-  height: rem(50);
   width: 100%;
+}
+
+.c-btn--nomal {
+  height: rem(50);
   background-color: $black3;
   border: 1px solid $white;
   @include txt(rem(20), 400, $white, center);
@@ -20,14 +23,14 @@
   }
 }
 
-.c-btn::before {
+.c-btn--nomal::before {
   @include mq() {
-    content:"";
+    content: "";
     position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background-color: $white;
     border: 0;
     transform: translateX(-100%);
@@ -45,11 +48,66 @@
 }
 
 .c-btn--pc-small {
+  @include txt(rem(20), 400, $white, center);
+  @include txt-option(rem(50), math.div(2em, 20));
   @include mq() {
     height: rem(30);
     width: rem(134);
     background-color: $white;
     border: 0;
     color: $black0;
+    line-height: rem(30);
   }
+}
+
+.c-btn--pc-small::before {
+  @include mq() {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black3;
+    border: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+  }
+}
+
+.c-btn--pc-small:hover {
+  color: $white;
+}
+
+.c-btn--submit {
+  background-color: $white;
+  border: 0;
+  @include txt(rem(20), 400, $black0, center);
+  @include txt-option(rem(50), math.div(2em, 20));
+  @include mq() {
+    height: rem(60);
+    width: rem(360);
+    line-height: rem(60);
+  }
+}
+
+.c-btn--submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black3;
+  border: 0;
+  transform: translateX(-100%);
+  transition: 0.3s ease-in-out;
+  z-index: -1;
+// @include mq() {
+//   }
+}
+
+.c-btn--submit:hover {
+  color: $white;
 }
