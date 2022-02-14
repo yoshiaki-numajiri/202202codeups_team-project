@@ -48,6 +48,8 @@
 }
 
 .c-btn--pc-small {
+  background-color: $black3;
+  border: 1px solid $white;
   @include txt(rem(20), 400, $white, center);
   @include txt-option(rem(50), math.div(2em, 20));
   @include mq() {
