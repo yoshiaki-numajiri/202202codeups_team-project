@@ -8,7 +8,7 @@
   width: 100%;
 }
 
-.c-btn--nomal {
+.c-btn--normal {
   height: rem(50);
   background-color: $black3;
   border: 1px solid $white;
@@ -23,7 +23,7 @@
   }
 }
 
-.c-btn--nomal::before {
+.c-btn--normal::before {
   @include mq() {
     content: "";
     position: absolute;
