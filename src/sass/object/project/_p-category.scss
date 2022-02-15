@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.p-category {
+
+}
+
+.p-category__items {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.p-category__item a {
+  display: inline-block;
+  @include txt(rem(16), $regular, $white, center);
+  @include txt-option(1.438, 0.125em);
+  padding: rem(3.5) rem(5.5);
+  margin-right: rem(12);
+  text-transform: uppercase;
+}
+
+.p-category__item a.is-active {
+  background-color: $white;
+  color: $black3;
+}

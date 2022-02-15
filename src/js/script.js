@@ -1,6 +1,14 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
+  $(function(){
+    var btn = $('.p-category__item a');
+    btn.click(function(){
+      btn.removeClass('is-active');
+      $(this).addClass('is-active');
+    });
+  });
+
   var topBtn = $('.page-top');
   topBtn.hide();
 
