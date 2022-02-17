@@ -40,11 +40,15 @@
 }
 
 .c-btn:hover {
-  color: $black0;
+  @include mq() {
+    color: $black0;
+  }
 }
 
 .c-btn:hover::before {
-  transform: translateX(0);
+  @include mq() {
+    transform: translateX(0);
+  }
 }
 
 .c-btn--pc-small {
@@ -79,7 +83,9 @@
 }
 
 .c-btn--pc-small:hover {
-  color: $white;
+  @include mq() {
+    color: $white;
+  }
 }
 
 .c-btn--submit {
@@ -95,6 +101,7 @@
 }
 
 .c-btn--submit::before {
+  @include mq() {
   content: "";
   position: absolute;
   top: 0;
@@ -106,10 +113,11 @@
   transform: translateX(-100%);
   transition: 0.3s ease-in-out;
   z-index: -1;
-// @include mq() {
-//   }
+  }
 }
 
 .c-btn--submit:hover {
-  color: $white;
+  @include mq() {
+    color: $white;
+  }
 }
