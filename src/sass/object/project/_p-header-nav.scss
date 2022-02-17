@@ -41,7 +41,7 @@
   height: 100%;
 }
 
-.p-header-nav__item--white {
+.p-header-nav__item--white a {
   @include mq() {
     background-color: $white;
     color: $black3;
@@ -95,7 +95,7 @@
   // overflow: hidden;
 }
 
-.p-header-nav__item--white::before {
+.p-header-nav__item--white a::before {
   @include mq() {
     content: "";
     position: absolute;
@@ -111,11 +111,11 @@
   }
 }
 
-.p-header-nav__item--white:hover {
+.p-header-nav__item--white a:hover {
   color: $white;
 }
 
-.p-header-nav__item--white:hover::before {
+.p-header-nav__item--white:hover a::before {
   transform: translateX(0);
 }
 
