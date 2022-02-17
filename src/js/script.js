@@ -2,7 +2,7 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
   $(function(){
-    var btn = $('.p-category__item a');
+    var btn = $('.p-category__item');
     btn.click(function(){
       btn.removeClass('is-active');
       $(this).addClass('is-active');

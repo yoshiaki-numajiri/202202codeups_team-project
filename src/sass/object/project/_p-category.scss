@@ -10,7 +10,7 @@
   flex-wrap: wrap;
 }
 
-.p-category__item a {
+.p-category__item {
   display: inline-block;
   @include txt(rem(16), $regular, $white, center);
   @include txt-option(1.438, 0.125em);
@@ -19,7 +19,7 @@
   text-transform: uppercase;
 }
 
-.p-category__item a.is-active {
+.is-active {
   background-color: $white;
   color: $black3;
 }
