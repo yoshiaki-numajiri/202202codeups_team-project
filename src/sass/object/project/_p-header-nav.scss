@@ -2,15 +2,19 @@
 @use "sass:math";
 
 .p-header-nav {
-  // include元で指定（ここから）
+  // 表示確認用（ここから）
   // position: fixed;
   // top: 0;
   // right:0;
   // bottom:0;
   // left:0;
   // z-index: 1;
-  // include元で指定（ここまで）
-  height: 100%;
+  // include元で指定（ここまで）  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   width: 100%;
   background-color: $black1;
   @include txt(rem(16), $regular, $white, center);
@@ -22,9 +26,6 @@
 
 .p-header-nav__list {
   display: block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   align-items: center;

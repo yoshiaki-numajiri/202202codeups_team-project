@@ -14,9 +14,10 @@
     <p>component/_c-hamburger</p>
     <%- include('./component/_c-hamburger') %>
     
-    <p>common/_p-header-nav</p>
-    <%- include('./common/_p-header-nav') %>
-
+    <p>common/_p-header-nav（SPのみ表示）</p>
+    <p>表示非表示やz-index、position:fixedなどの記述は呼び出し元のp-headerで指定をお願いします。</p>
+      <%- include('./common/_p-header-nav') %>
+      
     <p>common/_footer</p>
     <%- include('./common/_footer') %>
 
