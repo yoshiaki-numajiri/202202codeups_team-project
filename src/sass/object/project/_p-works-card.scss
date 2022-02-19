@@ -1,0 +1,47 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-works-card {
+  position: relative;
+  width: 100%;
+}
+
+.p-works-card__image {
+  position: relative;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+}
+
+.p-works-card__image::before {
+  content: "";
+  display: block;
+  padding-top: math.div(249, 375) * 100%;
+}
+
+.p-works-card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.p-works-card__label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: rem(8) rem(20);
+  background-color: $black1;
+  background-color: pink;
+  letter-spacing: math.div( 2em, 16);
+  text-indent: math.div( 2em, 16);
+}
+
+.p-works-card__title {
+  margin-top: rem(24);
+  @include txt( rem(20), $medium, $white, center);
+  letter-spacing: math.div( 2em, 20);
+}
