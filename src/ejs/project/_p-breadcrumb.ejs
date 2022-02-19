@@ -1,0 +1,22 @@
+<ol class="p-breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+  <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a itemprop="item" href="#">
+      <span itemprop="name">トップ</span>
+    </a>
+    <meta itemprop="position" content="1" />
+  </li>
+  <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+    <a itemprop="item" href="<%= link %>">
+      <span itemprop="name"><%= seccondPage %></span>
+    </a>
+    <meta itemprop="position" content="2" />
+  </li>
+  <% if( ! thirdPage == "" ) { %>
+    <li class="p-breadcrumb__item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      <a itemprop="item" href="<%= link %>">
+        <span itemprop="name"><%= thirdPage %></span>
+      </a>
+      <meta itemprop="position" content="2" />
+    </li>
+  <% } %>
+</ol>

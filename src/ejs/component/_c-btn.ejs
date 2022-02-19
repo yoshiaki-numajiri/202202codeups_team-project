@@ -1,1 +1,10 @@
-<a href="<%= link %>" class="c-btn"><%= text %></a>
+<%# ノーマルボタン %>
+<% if( btntype == 'normal' ) { %>
+  <a href="<%= link %>" class="c-btn c-btn--normal"><%= text %></a>
+<%# PC表示で小さい白背景のボタン %>
+<% } else if(btntype == 'pcSmall') { %>
+  <a href="<%= link %>" class="c-btn c-btn--pc-small"><%= text %></a>
+<%# 送信ボタン %>
+<% } else if(btntype == 'submit') { %>
+  <a href="<%= link %>" class="c-btn c-btn--submit"><%= text %></a>
+<% } %>

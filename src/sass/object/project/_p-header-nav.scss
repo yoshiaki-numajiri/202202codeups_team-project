@@ -1,0 +1,122 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-header-nav {
+  // 表示確認用（ここから）
+  // position: fixed;
+  // top: 0;
+  // right:0;
+  // bottom:0;
+  // left:0;
+  // z-index: 1;
+  // include元で指定（ここまで）  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-color: $black1;
+  @include txt(rem(16), $regular, $white, center);
+  @include txt-option(3, math.div(2em, 16));
+  @include mq() {
+    height: 100%;
+  }
+}
+
+.p-header-nav__list {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  @include mq() {
+    position: relative;
+    height: 100%;
+    flex-direction: row;
+  }
+}
+
+.p-header-nav__item {
+  height: 100%;
+}
+
+.p-header-nav__item--white a {
+  @include mq() {
+    background-color: $white;
+    color: $black3;
+  }
+}
+
+.p-header-nav__item a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  @include mq() {
+    position: relative;
+    padding-right: rem(16);
+    padding-left: rem(16);
+  }
+}
+
+.p-header-nav__item:nth-last-child(2) a {
+  @include mq() {
+    margin-right: rem(16);
+  }
+}
+
+.p-header-nav__item:not(.p-header-nav__item--white) a::after {
+  @include mq() {
+    content: "";
+    position: absolute;
+    bottom: rem(8);
+    left: -50%;
+    transform: translateX(-50%);
+    width: calc(100% - #{rem(32)});
+    height: 1px;
+    background-color: $accent-color2;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.p-header-nav__item:not(.p-header-nav__item--white) a:hover::after {
+  @include mq() {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-header-nav__item--white {
+  display: block;
+  position: relative;
+  padding-right: rem(32);
+  padding-left: rem(32);
+  // overflow: hidden;
+}
+
+.p-header-nav__item--white a::before {
+  @include mq() {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $black3;
+    border: 0;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in-out;
+    z-index: -1;
+  }
+}
+
+.p-header-nav__item--white a:hover {
+  color: $white;
+}
+
+.p-header-nav__item--white:hover a::before {
+  transform: translateX(0);
+}
+
