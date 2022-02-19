@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.p-pager {
+  clear: both;
+  text-align: center;
+}
+
+.p-pager a,
+.p-pager span {
+  display: inline-block;
+  color: $white;
+  border: 1px solid $white;
+  margin-left: rem(12);
+  padding: rem(3) rem(6.55);
+  white-space: nowrap;
+  line-height: 1;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.p-pager .first,
+.p-pager .last {
+  letter-spacing: 0.125em;
+  padding: rem(3) rem(11);
+}
+
+.p-pager .first {
+  margin-left: 0;
+}
+.p-pager .last {
+  margin-left: rem(19);
+  margin-right: 0;
+}
+
+.p-pager a:hover {
+  @include mq(md) {
+    color: $black3;
+    background-color: $white;
+    border-color: $white;
+  }
+}
+.p-pager span.current {
+  color: $black3;
+  background-color: $white;
+  border-color: $white;
+  margin-left: rem(19);
+}
