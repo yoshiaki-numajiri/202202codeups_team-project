@@ -1,0 +1,41 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-news {
+  @include mq() {
+    display: flex;
+  }
+}
+
+.p-news__information {
+  @include mq() {
+    width: 100% * math.div(270, 1100);
+  }
+}
+
+.p-news__date {
+  display: inline-block;
+  margin-right: rem(32);
+}
+
+.p-news__category {
+  display: inline-block;
+  padding: rem(6) rem(22);
+  border: 1px solid $white;
+  font-size: rem(14);
+  @include mq() {
+    height: fit-content;
+  }
+}
+
+.p-news__title {
+  display: inline-block;
+  width: 100%;
+  font-size: rem(16);
+  font-weight: $regular;
+  @include mq() {
+    flex:1;
+    padding-top: rem(7);
+
+  }
+}
