@@ -3,32 +3,37 @@
 <%- include('./common/_head') %>
   <body>
     <div class="l-inner">
-      <p>component/_c-btn btntype:'normal'</p>
+      <p>詳しく見るボタン component/_c-btn btntype:'normal'</p>
       <%- include('./component/_c-btn',{text:'詳しく見る', link:'#', btntype:'normal'}) %>
-      <p>component/_c-btn btntype:'pcSmall'</p>
+
+      <p>すべて見るボタン component/_c-btn btntype:'pcSmall'</p>
       <%- include('./component/_c-btn',{text:'すべて見る', link:'#', btntype:'pcSmall'}) %>
-      <p>component/_c-btn btntype:'submit'</p>
+
+      <p>送信ボタン component/_c-btn btntype:'submit'</p>
       <%- include('./component/_c-btn',{text:'送信', link:'#', btntype:'submit'}) %>
-      <p>component/_c-hamburger</p>
+
+      <p>ハンバーガーメニュー component/_c-hamburger</p>
       <%- include('./component/_c-hamburger') %>
       
-      <p>common/_p-header-nav（SPのみ表示）</p>
+      <p>ドロワーメニュー（ヘッダーナビ）common/_p-header-nav（SPのみ表示）</p>
       <p>表示非表示やz-index、position:fixedなどの記述は呼び出し元のp-headerで指定をお願いします。</p>
       <%- include('./common/_p-header-nav') %>
       
-      <p>project/_p-breadcrumb</p>
+      <p>パンくずリスト project/_p-breadcrumb</p>
       <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'制作実績', thirdPage:''}) %>
       <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'制作実績', thirdPage:'制作実績詳細'}) %>
       
-      <p>project/_p-works-card</p>
+      <p>お知らせ project/_p-news</p>
+      <%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %>
+      <%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %>
+
+      <p>制作実績カード project/_p-works-card</p>
       <%- include('./project/_p-works-card',{link:'#', imgSrc:'./images/common/dummy.jpg', imgAlt:'dummy.jpg', category:'カテゴリ１', title:'CodeUps株式会社'}) %>
       <p>common/_footer</p>
       <%- include('./common/_footer') %>
       
       
       
-        <a href="#"></a>
-      </div>
     </div>
   </body>
 </html>
