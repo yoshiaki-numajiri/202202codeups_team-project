@@ -1,0 +1,13 @@
+@use "sass:math";
+
+.p-breadcrumb__list {
+  letter-spacing: math.div( 1em, 16);
+}
+
+.p-breadcrumb__item {
+  display: inline;
+}
+
+.p-breadcrumb__item:not(:last-child)::after {
+  content: '>';
+}
