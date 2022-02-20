@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.c-logo img {
-  width: rem(70);
-  @include mq(md) {
-    width: rem(94);
-  }
+.c-logo {
+  
 }
