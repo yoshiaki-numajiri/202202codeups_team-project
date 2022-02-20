@@ -15,15 +15,32 @@
     <p>project/_p-pager</p>
     <%- include('./project/_p-pager') %>
 
-    <%#
-     下記パーツはまだマージしていないので、エラーが出ないようにコメントアウトしています
-     パーツ完成後に、"%#" → "%-"に修正
-     %>
-    
     <p>component/_c-section-title</p>
-    <%# include('./component/_c-section-title',{ja:'事業内容', en:'Content'}) %>
-
-
+    <%- include('./component/_c-section-title',{ja:'事業内容', en:'Content'}) %>
     
+    <%#
+    下記パーツはまだマージしていないので、エラーが出ないようにコメントアウトしています
+    パーツ完成後に、"%#" → "%-"に修正
+    %>
+
+    <p>common/_p-header</p>
+    <header class="p-header">
+      <div class="p-header__inner">
+        <div class="p-header__wrapper">
+          <div class="p-header__logo">
+            <%- include('./component/_c-logo') %>
+          </div>
+          <div class="p-hamburger u-mobile">
+            <%- include('./component/_c-hamburger') %>
+          </div>
+          <div class="p-header-nav__sp u-mobile">
+            <%- include('./common/_p-header-nav') %>
+          </div>
+          <div class="p-header-nav__pc u-desktop">
+            <%- include('./common/_p-header-nav') %>
+          </div>
+      </div>
+    </div>
+    </header>
   </body>
 </html>
