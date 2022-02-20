@@ -21,7 +21,7 @@
   }
 }
 
-.p-header-nav__sp {
+.p-header__nav {
   position: fixed;
   top: 0;
   left: 0;
@@ -32,4 +32,14 @@
   text-align: center;
   padding-top: rem(209);
   display: none;
+  @include mq(md) {
+    display: block;
+    position: initial;
+    height: initial;
+    padding-top: 0;
+  }
+}
+
+.p-header-nav.is-open {
+  display: block;
 }
