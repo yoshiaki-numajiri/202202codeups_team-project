@@ -1,16 +1,18 @@
 @use "global" as *;
 
 .p-header {
+  height: rem(50);
+}
+
+.p-header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 rem(21);
   @include mq(md) {
     padding: 0 rem(32);
   }
-}
-
-.p-header__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .p-header__logo {
@@ -27,7 +29,6 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #111111;
   z-index: 100;
   text-align: center;
   padding-top: rem(209);
@@ -35,11 +36,11 @@
   @include mq(md) {
     display: block;
     position: initial;
-    height: initial;
+    height: inherit;
     padding-top: 0;
   }
 }
 
-.p-header-nav.is-open {
+.p-header__nav.is-open {
   display: block;
 }
