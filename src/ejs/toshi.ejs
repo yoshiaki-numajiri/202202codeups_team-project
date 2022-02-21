@@ -3,7 +3,9 @@
 <%- include('./common/_head') %>
   <body>
 
-    <!-- <p>component/_c-logo</p>
+
+    <p>component/_c-logo</p>
+
     <%# include('./component/_c-logo') %>
     
     <p>component/_c-top-btn</p>
@@ -16,27 +18,35 @@
     <%# include('./project/_p-pager') %>
 
     <p>component/_c-section-title</p>
-    <%# include('./component/_c-section-title',{ja:'事業内容', en:'Content'}) %> -->
-    
-    <%#
-    下記パーツはまだマージしていないので、エラーが出ないようにコメントアウトしています
-    パーツ完成後に、"%#" → "%-"に修正
-    %>
 
-    <!-- <p>common/_p-header</p> -->
-    <header class="p-header">
-      <div class="p-header__inner">
-        <div class="p-header__logo">
-          <%- include('./component/_c-logo') %>
-        </div>
-        <div class="p-hamburger u-mobile">
-          <%- include('./component/_c-hamburger') %>
-        </div>
-        <div class="p-header__nav js-drawer-nav u-desktop">
-          <%- include('./common/_p-header-nav') %>
-        </div>
-      </div>
-    </header>
+    <%- include('./component/_c-section-title',{ja:'事業内容', en:'Content'}) %>
+
+    <p>common/_p-footer-nav</p>
+    <%# include('./common/_p-footer-nav') %>
+
+    <nav class="p-footer-nav">
+      <ul class="p-footer-nav__items">
+        <li class="p-footer-nav__item u-mobile">
+          <a href="#">トップ</a>
+        </li>
+        <li class="p-footer-nav__item">
+          <a href="#">お知らせ</a>
+        </li>
+        <li class="p-footer-nav__item">
+          <a href="#">事業内容</a>
+        </li>
+        <li class="p-footer-nav__item">
+          <a href="#">企業概要</a>
+        </li>
+        <li class="p-footer-nav__item">
+          <a href="#">ブログ</a>
+        </li>
+        <li class="p-footer-nav__item">
+          <a href="#">お問い合わせ</a>
+        </li>
+      </ul>
+    </nav>
+
 
   </body>
 </html>
