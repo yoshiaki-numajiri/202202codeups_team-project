@@ -14,15 +14,16 @@
   padding-top: rem(8);
 }
 
-.p-footer-nav__item:not(:last-child) {
-  @include mq(md) {
-    padding-right: rem(32);
-  }
-}
+// .p-footer-nav__item:not(:last-child) {
+//   @include mq(md) {
+//     padding-right: rem(32);
+//   }
+// }
 
 .p-footer-nav__item a {
   @include txt(rem(16), $regular, $white, center);
   @include txt-option(1, 0.075em); // 1.2px/fsz16
+  padding: 0 rem(16);
   @include mq(md) {
     position: relative;
   }
@@ -32,15 +33,15 @@
   @include mq(md) {
     position: absolute;
     content: '';
-    left: 0;
+    left: rem(16);
     right: 0;
     bottom: rem(-7);
-    width: 100%;
+    width: calc(100% - #{rem(32)});
     height: rem(1);
-    background-color: #FFEA2E;
+    background-color: $accent-color2;
     transform: scale(0, 1);
-    transform-origin: left;
-    transition: transform .3s;
+    // transform-origin: left;
+    transition: 0.3s ease-in-out;
   }
 }
 
