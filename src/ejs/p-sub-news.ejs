@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+  <%#- include('./common/_p-header') %>
+  <%- include('./project/_p-sub-mv',{pageTitle:'お知らせ'}) %>
+
+  <div class="p-sub-news__l-breadcrumb l-breadcrumb">
+      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'制作実績', thirdPage:''}) %>
+  </div>
+
+  <main class="p-sub-news__main">
+
+    <div class="p-sub-news__l-inner l-inner">
+      <ul class="p-sub-news__list">
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+        <li class="p-sub-news__item"><%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %></li>
+      </ul>
+    </div>
+
+    <div class="p-sub-news__pager">
+      <div class="p-sub-news__l-pager l-pager">
+        <%- include('./project/_p-pager') %>
+      </div>
+    </div>
+
+  </main>
+
+  <%#- include('./common/_p-footer') %>
+</body>
+</html>

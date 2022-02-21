@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.p-sub-news__main {
+  margin-top: rem(85);
+}
+
+.p-sub-news__item + .p-sub-news__item {
+  margin-top: rem(32);
+}
