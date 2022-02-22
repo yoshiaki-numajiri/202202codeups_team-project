@@ -5,7 +5,10 @@
   <%#- include('./common/_p-header') %>
   <div class="l-inner">
       <p>詳しく見るボタン component/_c-btn btntype:'normal'</p>
-      <%- include('./component/_c-btn',{text:'詳しく見る', link:'#', btntype:'normal'}) %>
+
+      <div style="margin:auto; text-align: center;">
+        <%- include('./component/_c-btn',{text:'詳しく見る', link:'#', btntype:'normal'}) %>
+      </div>
 
       <p>すべて見るボタン component/_c-btn btntype:'pcSmall'</p>
       <%- include('./component/_c-btn',{text:'すべて見る', link:'#', btntype:'pcSmall'}) %>
