@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <%- include('./common/_head') %>
-  <body>
-    <div class="l-inner">
+<body>
+  <%#- include('./common/_p-header') %>
+  <div class="l-inner">
       <p>詳しく見るボタン component/_c-btn btntype:'normal'</p>
       <%- include('./component/_c-btn',{text:'詳しく見る', link:'#', btntype:'normal'}) %>
 
@@ -33,11 +34,10 @@
       <p>下層メインビュー project/_p-sub-mv</p>
       <%- include('./project/_p-sub-mv',{pageTitle:'お知らせ'}) %>
 
-      <p>common/_footer</p>
-      <%- include('./common/_footer') %>
       
       
       
     </div>
+    <%- include('./common/_footer') %>
   </body>
 </html>

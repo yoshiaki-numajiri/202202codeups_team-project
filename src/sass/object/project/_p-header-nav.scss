@@ -21,6 +21,7 @@
   @include txt-option(3, math.div(2em, 16));
   @include mq() {
     height: 100%;
+    width: fit-content;
   }
 }
 
@@ -35,6 +36,7 @@
     position: relative;
     height: 100%;
     flex-direction: row;
+    width: fit-content;
   }
 }
 
@@ -91,9 +93,14 @@
 .p-header-nav__item--white {
   display: block;
   position: relative;
-  padding-right: rem(32);
-  padding-left: rem(32);
   // overflow: hidden;
+}
+
+.p-header-nav__item--white a {
+  @include mq() {
+    padding-right: rem(32);
+    padding-left: rem(32);
+  }
 }
 
 .p-header-nav__item--white a::before {
