@@ -1,0 +1,39 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-footer {
+  width: 100%;
+  padding-top: rem(48);
+  padding-bottom: rem(48);
+  @include mq() {
+    padding: rem(32) rem(32) rem(16);
+  }
+}
+
+.p-footer__inner {
+  @include mq() {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.p-footer__logo {
+  width: rem(70);
+  margin-right: auto;
+  margin-left: auto;
+  @include mq() {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.p-footer__copyright {
+  margin-top: rem(32);
+  font-size: rem(11);
+  letter-spacing: math.div( 1.2em, 11 );
+  text-align: center;
+}
