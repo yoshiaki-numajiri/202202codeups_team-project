@@ -1,4 +1,10 @@
 <div class="c-section-title">
   <h2 class="c-section-title__ja"><%= ja %></h2>
+  <% if((en == 'Works') || (en == 'Blog') ){%>
+    <p class="c-section-title__en c-section-title__en--right">
+        <%= en %>
+    </p>
+    <% }else{ %>
   <p class="c-section-title__en"><%= en %></p>
+  <% } %>
 </div>
