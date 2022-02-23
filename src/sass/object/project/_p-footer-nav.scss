@@ -11,14 +11,8 @@
 }
 
 .p-footer-nav__item {
-  padding-top: rem(8);
+  padding: rem(4) 0;
 }
-
-// .p-footer-nav__item:not(:last-child) {
-//   @include mq(md) {
-//     padding-right: rem(32);
-//   }
-// }
 
 .p-footer-nav__item a {
   @include txt(rem(16), $regular, $white, center);
