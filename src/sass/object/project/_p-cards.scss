@@ -1,0 +1,50 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-cards__list {
+  @include mq() {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.p-cards__item + .p-cards__item {
+  margin-top: rem(24);
+  @include mq() {
+    margin-top: 0;
+  }
+}
+
+.p-cards__item:nth-child(n + 4) {
+  @include mq() {
+    margin-top: rem(48);
+  }
+}
+
+.p-cards__item:not(:nth-child(3n)) {
+  margin-right: 100% * math.div(25, strip-unit($l-inner));
+}
+
+.p-cards__item {
+  position: relative;
+  @include mq() {
+    width: 100% * math.div(350, strip-unit($l-inner));
+  }
+}
+
+.p-cards__item--new::before {
+  background: $accent-color3;
+  border-radius: 50%;
+  color: $black3;
+  content: "New";
+  width: rem(60);
+  height: rem(60);
+  line-height: rem(60);
+  letter-spacing: math.div( 2em, 16);
+  text-indent: math.div( 2em, 16);
+  position: absolute;
+    top: rem(-16);
+    left: rem(-15);
+  text-align: center;
+  z-index: 1;
+}
