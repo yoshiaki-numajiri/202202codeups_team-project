@@ -3,8 +3,10 @@
 <%- include('./common/_head') %>
   <body>
 
+
     <p>component/_c-logo</p>
     <%- include('./component/_c-logo') %>
+
     
     <p>component/_c-top-btn</p>
     <%- include('./component/_c-top-btn') %>
@@ -15,18 +17,42 @@
     <p>project/_p-pager</p>
     <%- include('./project/_p-pager') %>
 
-    <%#
-     下記パーツはまだマージしていないので、エラーが出ないようにコメントアウトしています
-     パーツ完成後に、"%#" → "%-"に修正
-     %>
-    
     <p>component/_c-section-title</p>
+
     <%- include('./component/_c-section-title',{ja:'事業内容', en:'Content'}) %>
 
     <p>common/_p-footer-nav</p>
     <%- include('./common/_p-footer-nav') %>
 
     
+
+
+    <div class="p-contact">
+      <div class="p-contact__inner">
+        <div class="p-contact__head">
+          <%- include('./component/_c-section-title',{ja:'お問い合わせ', en:'Contact'}) %>
+        </div>
+        <div class="p-contact__wrapper">
+          <div class="p-contact__body">
+            <p class="p-contact__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+          </div>
+            <div class="p-contact__btn">
+              <%- include('./component/_c-btn',{text:'お問い合わせへ', link:'#', btntype:'normal'}) %>
+            </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <%#
+    下記パーツはまだマージしていないので、エラーが出ないようにコメントアウトしています
+    パーツ完成後に、"%#" → "%-"に修正
+    %>
+
+    <p>common/_p-header</p>
+    <%- include('./common/_p-header') %>
+    
+
 
   </body>
 </html>

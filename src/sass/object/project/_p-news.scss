@@ -9,7 +9,8 @@
 
 .p-news__information {
   @include mq() {
-    width: 100% * math.div(270, 1100);
+    width: 100% * math.div(272, strip-unit($l-inner--middle) );
+    margin-right: rem(16);
   }
 }
 
@@ -30,12 +31,19 @@
 
 .p-news__title {
   display: inline-block;
-  width: 100%;
+  margin-top: rem(8);
   font-size: rem(16);
   font-weight: $regular;
   @include mq() {
-    flex:1;
+    flex: 1;
+    margin-top: 0;
     padding-top: rem(7);
 
+  }
+}
+
+.p-news__title a:hover {
+  @include mq() {
+    color: $accent-color1;
   }
 }

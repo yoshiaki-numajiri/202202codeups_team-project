@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.p-contact {
+  padding: rem(19) 0 rem(64);
+  background: $black3d;
+  @include mq(md) {
+    padding: rem(57) 0 rem(149);
+  }
+}
+
+.p-contact__inner {
+  padding: 0 $padding-sp;
+  @include mq(md) {
+    padding: 0 $padding-pc;
+  }
+}
+
+.p-contact__wrapper {
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(24);
+  }
+}
+
+.p-contact__text {
+  @include txt-option(auto, 0.125em); // 2px/fsz16
+  @include mq(md) {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.p-contact__btn {
+  margin-top: rem(40);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(67);
+  }
+}

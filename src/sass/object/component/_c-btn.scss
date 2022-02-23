@@ -2,7 +2,7 @@
 @use "sass:math";
 
 .c-btn {
-  display: block;
+  display: inline-block;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -13,13 +13,13 @@
   background-color: $black3;
   border: 1px solid $white;
   @include txt(rem(20), 400, $white, center);
-  @include txt-option(rem(50), math.div(2em, 20));
+  @include txt-option(rem(48), math.div(2em, 20));
   text-indent: math.div(2em, 20);
   @include mq() {
-    height: rem(54);
+    height: rem(60);
     width: rem(360);
     @include txt(rem(16), 500, $white, center);
-    @include txt-option(rem(50), math.div(2, 16));
+    @include txt-option(rem(58), math.div(2, 16));
   }
 }
 
@@ -55,7 +55,7 @@
   background-color: $black3;
   border: 1px solid $white;
   @include txt(rem(20), 400, $white, center);
-  @include txt-option(rem(50), math.div(2em, 20));
+  @include txt-option(rem(48), math.div(2em, 20));
   @include mq() {
     height: rem(30);
     width: rem(134);
