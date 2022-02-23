@@ -1,10 +1,24 @@
+<%# 新着1、その他2のカードの記述 %>
+<%#- include('./project/_p-cards',{numberNew:'1', number:'2'}) %>
+
+<%# 新着0、その他9のカードの記述 %>
+<%#- include('./project/_p-cards',{numberNew:'', number:'9'}) %>
+
 <div class="p-cards">
   <ul class="p-cards__list">
-    <% var number %>
+    <% if( ! numberNew == "" ) { %>
+    <% for (var i=0; i < numberNew; i++) { %>
+      <li class="p-cards__item p-cards__item--new">
+      <%- include('_p-card') %>
+      </li>
+      <% } %>
+    <% } %>
+    <% if( ! number == "" ) { %>
     <% for (var i=0; i < number; i++) { %>
       <li class="p-cards__item">
-        <%- include('_p-card') %>
+      <%- include('_p-card') %>
       </li>
+      <% } %>
     <% } %>
   </ul>
 </div>
