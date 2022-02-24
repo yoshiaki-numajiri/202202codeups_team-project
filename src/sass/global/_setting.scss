@@ -6,6 +6,7 @@
 // コンテンツのインナー幅（最も共通の幅が多い部分）
 $l-inner: 1100px;
 $l-inner--middle: 860px;
+$l-inner--small: 800px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
@@ -35,16 +36,9 @@ $accent-color3: #FFBA6A; // New背景色
 $warning-color1: #FF5757; // フォームエラーメッセージ文字色
 $warning-color2: #FFDCDC; // フォームエラー時背景色
 
-// スライドのページネーションの色
-$dot-color-defalt: #C4C4C4;
-
-// 見出し装飾
+// スライドのページネーション、ブログ詳細ページ見出しの色
 $gray: #C4C4C4;
 
-
-////////////////////
-// フォント設定
-////////////////////
 
 // ----------------------------------------
 // mixin
@@ -60,15 +54,15 @@ $gray: #C4C4C4;
   letter-spacing: $letter-spacing;
 }
 
+////////////////////
+// フォント設定
+////////////////////
+
+
 $base-font-family: 'Noto Sans JP', sans-serif;
 $second-font-family: 'Noto Serif JP', serif;
 // ※検証ツールでしっかり反映されているか確認する
 
-body {
-  background-color: $black1;
-  color: $white;
-  font-family: $base-font-family;
-}
 
 // フォントウェイト
 $regular: 300;
