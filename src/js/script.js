@@ -9,6 +9,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
+  //swiper mv
+  let swipeOption = {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    speed: 2000,
+    pagination: { 
+      el: '.swiper-pagination', //ページネーションの要素
+      type: 'bullets', //ページネーションの種類
+      clickable: true, //クリックに反応させる
+    }
+  }
+  new Swiper('.mySwiper', swipeOption);
+
   var topBtn = $('.page-top');
   topBtn.hide();
 
