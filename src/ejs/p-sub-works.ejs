@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <header class="l-header">
+      <%- include('./common/_p-header') %>
+    </header>
+  <%- include('./project/_p-sub-mv',{pageTitle:'制作実績'}) %>
+
+  <div class="l-breadcrumb">
+      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'制作実績', thirdPage:''}) %>
+  </div>
+
+  <main class="p-sub-works__main">
+    <div class="p-sub-works__inner l-inner">
+        <%- include('./project/_p-category') %>
+      <ul class="p-sub-works__list">
+        <% for (var i=0; i < 6; i++) { %>
+          <li class="p-sub-works__item">
+            <%- include('./project/_p-works-card',{link:'#', imgSrc:'./images/works/works-item__image0001.jpg', imgAlt:'制作実績画像', category:'カテゴリ1', title:'CodeUps株式会社'}) %>
+            </li>
+      
+          <% } %>
+        </ul>
+      <div class="l-pager">
+        <%- include('./project/_p-pager') %>
+      </div>
+    </div>
+  </main>
+
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+  
+  <%- include('./common/_p-footer') %>
+</body>
+</html>
