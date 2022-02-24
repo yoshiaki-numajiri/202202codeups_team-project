@@ -8,8 +8,7 @@
 
 .p-works-card__image {
   position: relative;
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
+  width: 100%;
 }
 
 .p-works-card__image::before {
@@ -35,7 +34,6 @@
   right: 0;
   padding: rem(8) rem(20);
   background-color: $black1;
-  background-color: pink;
   letter-spacing: math.div( 2em, 16);
   text-indent: math.div( 2em, 16);
 }
