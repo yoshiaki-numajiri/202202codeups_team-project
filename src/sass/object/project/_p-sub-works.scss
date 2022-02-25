@@ -24,7 +24,9 @@
 }
 
 .p-sub-works__item {
-  width: 100% * math.div(525, strip-unit($l-inner));
+  @include mq(){
+    width: 100% * math.div(525, strip-unit($l-inner));
+  }
 }
 
 .p-sub-works__item + .p-sub-works__item {
