@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <header class="l-header">
+      <%- include('./common/_p-header') %>
+    </header>
+  <%- include('./project/_p-sub-mv',{pageTitle:'事業内容'}) %>
+
+  <div class="l-breadcrumb">
+      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'事業内容', thirdPage:''}) %>
+  </div>
+
+  <main class="p-sub-overview__main">
+    <div class="p-sub-overview__inner l-inner">
+      <h2 class="p-sub-overview__main-title">企業理念</h2>
+      <p class="p-sub-overview__description">
+        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+      </p>
+      <ul class="p-sub-overview__list">
+        <li class="p-sub-overview__item">
+          <figure class="p-sub-overview__image">
+            <img src="./images/common/content-image01.jpg" alt="企業理念1の画像">
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+  
+  <%- include('./common/_p-footer') %>
+</body>
+</html>
