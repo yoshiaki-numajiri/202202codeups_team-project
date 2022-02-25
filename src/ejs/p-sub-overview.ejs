@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <%- include('./common/_head') %>
-  <body>
-    <header class="l-header">
-      <%- include('./common/_p-header') %>
-    </header>
+<%- include('./common/_head') %>
+
+<body>
+  <header class="l-header">
+    <%- include('./common/_p-header') %>
+  </header>
   <%- include('./project/_p-sub-mv',{pageTitle:'事業内容'}) %>
 
   <div class="l-breadcrumb">
-      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'事業内容', thirdPage:''}) %>
+    <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'事業内容', thirdPage:''}) %>
   </div>
 
   <main class="p-sub-overview__main">
@@ -22,6 +23,34 @@
           <figure class="p-sub-overview__image">
             <img src="./images/common/content-image01.jpg" alt="企業理念1の画像">
           </figure>
+          <div class="p-sub-overview__text">
+            <h3 class="p-sub-overview__heading">企業理念１</h3>
+            <p class="p-sub-overview__explanation">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+        </li>
+        <li class="p-sub-overview__item">
+          <figure class="p-sub-overview__image">
+            <img src="./images/common/content-image02.jpg" alt="企業理念2の画像">
+          </figure>
+          <div class="p-sub-overview__text">
+            <h3 class="p-sub-overview__heading">企業理念２</h3>
+            <p class="p-sub-overview__explanation">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
+        </li>
+        <li class="p-sub-overview__item">
+          <figure class="p-sub-overview__image">
+            <img src="./images/common/content-image03.jpg" alt="企業理念3の画像">
+          </figure>
+          <div class="p-sub-overview__text">
+            <h3 class="p-sub-overview__heading">企業理念３</h3>
+            <p class="p-sub-overview__explanation">
+              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+            </p>
+          </div>
         </li>
       </ul>
     </div>
@@ -30,7 +59,8 @@
   <div class="l-contact">
     <%- include('./project/_p-contact') %>
   </div>
-  
+
   <%- include('./common/_p-footer') %>
 </body>
+
 </html>

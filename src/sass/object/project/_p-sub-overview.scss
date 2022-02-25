@@ -1,0 +1,121 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-sub-overview__main {
+  width: 100%;
+  margin-top: rem(85);
+  @include mq() {
+    margin-top: rem(69);
+  }
+}
+
+.p-sub-overview__main-title {
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: math.div(2em, 20);
+  text-indent: math.div(2em, 20);
+  text-align: center;
+  @include mq() {
+    font-size: rem(25);
+    letter-spacing: math.div(2em, 25);
+    text-indent: math.div(2em, 25);
+  }
+}
+
+.p-sub-overview__description {
+  margin-top: rem(16);
+  letter-spacing: math.div(2em, 16);
+  text-indent: math.div(2em, 16);
+  @include mq() {
+    width: 100% * math.div( 568, strip-unit($l-inner));
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.p-sub-overview__list {
+  margin-top: rem(80);
+}
+
+.p-sub-overview__item {
+  @include mq(){
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.p-sub-overview__item:nth-child(even) {
+  @include mq() {
+    flex-direction: row-reverse;
+  }
+}
+
+.p-sub-overview__item + .p-sub-overview__item {
+  margin-top: rem(48);
+  @include mq(){
+    margin-top: rem(104);
+  }
+
+}
+
+.p-sub-overview__image {
+  position: relative;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  @include mq() {
+    width: 100% * math.div(550, strip-unit($l-inner));
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.p-sub-overview__image::before {
+  content: "";
+  display: block;
+  padding-top: 100% * math.div(261, 375);
+}
+
+.p-sub-overview__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.p-sub-overview__text {
+  @include mq() {
+    width: 100% * math.div(510, strip-unit($l-inner));
+  }
+}
+
+.p-sub-overview__heading {
+  margin-top: rem(16);
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: math.div(2em, 20);
+  text-indent: math.div(2em, 20);
+  text-align: center;
+  @include mq() {
+    font-size: rem(25);
+    letter-spacing: math.div(0.5em, 25);
+    text-indent: math.div(0.5em, 25);
+    text-align: left;
+  }
+}
+
+.p-sub-overview__explanation {
+  margin-top: rem(16);
+  font-weight: $regular;
+  letter-spacing: math.div(2em, 16);
+  text-indent: math.div(2em, 16);
+  @include mq() {
+    font-size: rem(16);
+    letter-spacing: math.div(0.5em, 16);
+    line-height: math.div(35, 16);
+    text-indent: math.div(0.5em, 16);
+  }
+}
