@@ -14,9 +14,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
-  background-color: $black1;
   @include txt(rem(16), $regular, $white, center);
   @include txt-option(3, math.div(2em, 16));
   @include mq() {
