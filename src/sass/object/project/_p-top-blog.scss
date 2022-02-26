@@ -6,6 +6,9 @@
 
 .p-top-blog__wrapper {
   margin-top: rem(64);
+  @include mq(md) {
+    margin-top: rem(47);
+  }
 }
 
 .p-top-blog__btn {
