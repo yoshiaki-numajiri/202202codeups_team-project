@@ -10,15 +10,13 @@
 }
 
 .c-btn--normal {
-  // height: rem(50);
-  padding-top: rem(9);
-  padding-bottom: rem(9);
+  height: rem(50);
   background-color: $black3;
   border: 1px solid $white;
   font-size: rem(20);
   font-weight: $normal;
   text-align: center;
-  // line-height: math.div( 48, 20 );
+  line-height: math.div( 48, 20 );
   letter-spacing: math.div( 2em, 20 );
   text-indent: math.div(2em, 20);
   @include mq() {
