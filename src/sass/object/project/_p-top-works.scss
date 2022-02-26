@@ -2,6 +2,9 @@
 
 .p-top-works__inner {
   @include mq(md) {
+    max-width: rem(1190);
+    width: 100%;
+    margin: 0 auto;
     padding: 0 $padding-pc;
   }
 }

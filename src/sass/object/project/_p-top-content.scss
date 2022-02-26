@@ -6,12 +6,25 @@
   }
 }
 
-.line-top {
-  position: relative;
+.p-top-content__inner {
+  
+}
+
+.p-top-content__wrapper {
+  @include mq(md) {
+    max-width: rem(1190);
+    width: 100%;
+    margin: 0 auto;
+
+  }
 }
 
 //line
-.line-top::after {
+.p-top-content__line-top {
+  position: relative;
+}
+
+.p-top-content__line-top::after {
   content: '';
   width: 206.93vw;
   height: 1px;

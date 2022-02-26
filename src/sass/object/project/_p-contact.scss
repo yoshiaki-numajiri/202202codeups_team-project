@@ -15,6 +15,15 @@
   }
 }
 
+.p-contact__head {
+  @include mq(md) {
+    max-width: rem(1190);
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $padding-pc;
+  }
+}
+
 .p-contact__wrapper {
   margin-top: rem(20);
   @include mq(md) {

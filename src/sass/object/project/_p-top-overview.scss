@@ -2,16 +2,19 @@
 
 .p-top-overview__inner {
   @include mq(md) {
+    max-width: rem(1190);
+    width: 100%;
+    margin: 0 auto;
     padding: 0 $padding-pc;
   }
 }
 
-.line-bottom {
+//line
+.p-top-overview__line-bottom {
   position: relative;
 }
 
-//line
-.line-bottom::after {
+.p-top-overview__line-bottom::after {
   content: '';
   width: 386.13vw;
   height: 1px;
