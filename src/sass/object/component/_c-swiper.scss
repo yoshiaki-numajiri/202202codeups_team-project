@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.swiper-pagination {
+  bottom: auto !important;
+  --swiper-theme-color: #F9F871 !important;
+  z-index: 0;
+  @include mq(md) {
+    
+  }
+}
+
+.swiper-wrapper {
+  @keyframes zoomUp {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.15);
+    }
+  }
+  
+  .swiper-slide-active .swiper-img,
+  .swiper-slide-duplicate-active .swiper-img,
+  .swiper-slide-prev .swiper-img{
+    animation: zoomUp 10s linear 0s 1 normal both;  
+  }
+  .swiper-img img{
+    display: block;
+  }
+}
+
+.swiper2 {
+  overflow: hidden;
+  @include mq(md) {
+    max-width: rem(557);
+    width: 100%;
+  }
+}

@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.p-headerColor {
+  background: $black1 !important;
+}
+
 .p-header {
   height: rem(50);
 }
