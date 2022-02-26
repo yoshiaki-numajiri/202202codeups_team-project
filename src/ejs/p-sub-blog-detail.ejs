@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <header class="l-header">
+      <%- include('./common/_p-header') %>
+    </header>
+
+  <div class="l-breadcrumb l-breadcrumb--detail">
+      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'ブログ記事一覧', thirdPage:'ブログ記事詳細'}) %>
+  </div>
+
+  <main class="p-sub-blog-detail__main">
+    <div class="p-sub-blog-detail__inner l-inner">
+      <h1 class="p-sub-blog-detail__title">
+        タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
+      </h1>
+      <time class="p-sub-blog-detail__date" datetime="2020-06-13">2020/06/13</time>
+      <div class="p-sub-blog-detail__category">カテゴリ１</div>
+      <figure class="p-sub-blog-detail__image">
+        <img src="" alt="">
+      </figure>
+
+      <div class="l-pager">
+        <%- include('./project/_p-pager') %>
+      </div>
+    </div>
+  </main>
+
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+  
+  <%- include('./common/_p-footer') %>
+</body>
+</html>
