@@ -1,7 +1,7 @@
 @use "global" as *;
 @use "sass:math";
 
-.p-sub-overview__main {
+.p-sub-content__main {
   width: 100%;
   margin-top: rem(85);
   @include mq() {
@@ -9,7 +9,7 @@
   }
 }
 
-.p-sub-overview__main-title {
+.p-sub-content__main-title {
   font-size: rem(20);
   font-weight: $regular;
   letter-spacing: math.div(2em, 20);
@@ -22,7 +22,7 @@
   }
 }
 
-.p-sub-overview__description {
+.p-sub-content__description {
   margin-top: rem(16);
   letter-spacing: math.div(2em, 16);
   text-indent: math.div(2em, 16);
@@ -33,24 +33,24 @@
   }
 }
 
-.p-sub-overview__list {
+.p-sub-content__list {
   margin-top: rem(80);
 }
 
-.p-sub-overview__item {
+.p-sub-content__item {
   @include mq(){
     display: flex;
     justify-content: space-between;
   }
 }
 
-.p-sub-overview__item:nth-child(even) {
+.p-sub-content__item:nth-child(even) {
   @include mq() {
     flex-direction: row-reverse;
   }
 }
 
-.p-sub-overview__item + .p-sub-overview__item {
+.p-sub-content__item + .p-sub-content__item {
   margin-top: rem(48);
   @include mq(){
     margin-top: rem(104);
@@ -58,7 +58,7 @@
 
 }
 
-.p-sub-overview__image {
+.p-sub-content__image {
   position: relative;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
@@ -69,13 +69,13 @@
   }
 }
 
-.p-sub-overview__image::before {
+.p-sub-content__image::before {
   content: "";
   display: block;
   padding-top: 100% * math.div(261, 375);
 }
 
-.p-sub-overview__image img {
+.p-sub-content__image img {
   position: absolute;
   top: 0;
   left: 0;
@@ -86,13 +86,13 @@
   height: 100%;
 }
 
-.p-sub-overview__text {
+.p-sub-content__text {
   @include mq() {
     width: 100% * math.div(510, strip-unit($l-inner));
   }
 }
 
-.p-sub-overview__heading {
+.p-sub-content__heading {
   margin-top: rem(16);
   font-size: rem(20);
   font-weight: $regular;
@@ -107,7 +107,7 @@
   }
 }
 
-.p-sub-overview__explanation {
+.p-sub-content__explanation {
   margin-top: rem(16);
   font-weight: $regular;
   letter-spacing: math.div(2em, 16);
