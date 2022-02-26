@@ -1,6 +1,22 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
+  $(function () {
+    var imgHeight = $('.js-mv').outerHeight(); //画像の高さを取得。これがイベント発火位置になる。
+  
+    var header = $('.js-header'); //ヘッダーコンテンツ
+  
+    $(window).on('load scroll', function () {
+      if ($(window).scrollTop() < imgHeight) {
+        //メインビジュアル内にいるので、クラスを外す。
+        header.removeClass('p-headerColor');
+      } else {
+        //メインビジュアルより下までスクロールしたので、クラスを付けて色を変える
+        header.addClass('p-headerColor');
+      }
+    });
+  });
+
   $(function(){
     var btn = $('.p-category__item');
     btn.click(function(){
@@ -8,23 +24,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(this).addClass('is-active');
     });
   });
-
-  //swiper mv
-  let swipeOption = {
-    loop: true,
-    effect: 'fade',
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    speed: 2000,
-    pagination: { 
-      el: '.swiper-pagination', //ページネーションの要素
-      type: 'bullets', //ページネーションの種類
-      clickable: true, //クリックに反応させる
-    }
-  }
-  new Swiper('.mySwiper', swipeOption);
 
   var topBtn = $('.page-top');
   topBtn.hide();

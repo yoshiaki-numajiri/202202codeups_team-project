@@ -4,7 +4,7 @@
   padding: rem(19) 0 rem(64);
   background: $black3d;
   @include mq(md) {
-    padding: rem(57) 0 rem(149);
+    padding: rem(77) 0 rem(149);
   }
 }
 
@@ -18,7 +18,7 @@
 .p-contact__wrapper {
   margin-top: rem(20);
   @include mq(md) {
-    margin-top: rem(24);
+    margin-top: rem(60);
   }
 }
 

@@ -1,0 +1,131 @@
+@use "global" as *;
+
+.p-top-overview__inner {
+  @include mq(md) {
+    padding: 0 $padding-pc;
+  }
+}
+
+.line-bottom {
+  position: relative;
+}
+
+//line
+.line-bottom::after {
+  content: '';
+  width: 386.13vw;
+  height: 1px;
+  background-color: $accent-color1;
+  transform: rotate(105.05deg);
+  transform-origin: 0 0; 
+  position: absolute;
+  top: -72px;
+  left: 63%;
+  z-index: -1;
+  @include mq(md) {
+    width: 141.25vw;
+    transform: rotate(135deg);
+    top: -182px;
+    left: 95%;
+  }
+}
+
+.p-top-overview__head {
+  position: relative;
+  @include mq(md) {
+    
+  } 
+}
+
+.p-top-overview__wrapper {
+  margin-top: rem(51);
+  @include mq(md) {
+    width: 100vw;
+    margin: rem(46) calc(50% - 50vw) 0;
+    background: linear-gradient(270deg, transparent 0%, transparent 30%, $black3 30%, $black3 100%);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: rem(80) calc(50vw - 50% + 90px);
+  }
+}
+
+.p-top-overview__img {
+  width: 100%;
+  position: relative;
+  @include mq(md) {
+    max-width: rem(557);
+    width: 100%;
+  }
+}
+
+.p-top-overview__img::before {
+  padding-top: 69.6%; // 261/375 //
+  display: block;
+  content: "";
+}
+
+.p-top-overview__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.p-top-overview__img::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $black1;
+  opacity: 0.2;
+}
+
+.p-top-overview__body {
+  padding: rem(34) rem(20) rem(21);
+  background-color: $black3;
+  text-align: center;
+  @include mq(md) {
+    max-width: rem(510);
+    width: 100%;
+    padding: 0;
+    background: none;
+    margin-right: rem(33);
+    text-align: left;
+  }
+}
+
+.p-top-overview__text-title {
+  @include txt(rem(20), $regular, $white, none);
+  @include txt-option(1, 0.1em); // 2px/fsz20
+  @include mq(md) {
+    font-size: rem(25);
+    @include txt-option(1, 0.02em); // 0.5px/fsz25
+  }
+}
+
+.p-top-overview__text {
+  margin-top: rem(24);
+  @include txt(rem(16), $regular, $white, left);
+  @include txt-option(auto, 0.125em); // 2px/fsz16
+  @include mq(md) {
+    @include txt-option(2.188, 0.03em); // 35/fsz16,0.5px/fsz16
+  }
+}
+
+.p-top-overview__btn {
+  margin-top: rem(26);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(48);
+    display: flex;
+    justify-content: left;
+  }
+}
