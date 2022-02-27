@@ -14,21 +14,6 @@
   }
 }
 
-.p-news__date {
-  display: inline-block;
-  margin-right: rem(32);
-}
-
-.p-news__category {
-  display: inline-block;
-  padding: rem(6) rem(22);
-  border: 1px solid $white;
-  font-size: rem(14);
-  @include mq() {
-    height: fit-content;
-  }
-}
-
 .p-news__title {
   display: inline-block;
   margin-top: rem(8);

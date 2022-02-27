@@ -13,3 +13,16 @@
     line-height: math.div( 35, 23 );
   }
 }
+
+.p-blog-article__date {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: math.div( 0.4em, 16);
+}
+
+.p-blog-article__category {
+  display: inline-block;
+  vertical-align: top;
+  letter-spacing: math.div( 0.4em, 16);
+}
+
