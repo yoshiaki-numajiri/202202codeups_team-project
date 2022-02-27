@@ -1,43 +1,11 @@
 @use "global" as *;
 @use "sass:math";
 
-.p-sub-blog-detail__main {
+.p-sub-blog-detail__blog-article {
   width: 100%;
-  margin-top: rem(120);
+  margin-top: rem(78);
   @include mq() {
-    margin-top: rem(115);
+    margin-top: rem(91);
   }
 }
 
-.p-sub-blog-detail__list {
-  margin-top: rem(16);
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
-  @include mq() {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: rem(40);
-    margin-right: 0;
-    margin-left: 0;
-  }
-}
-
-.p-sub-blog-detail__item {
-  @include mq(){
-    width: 100% * math.div(525, strip-unit($l-inner));
-  }
-}
-
-.p-sub-blog-detail__item + .p-sub-blog-detail__item {
-  margin-top: rem(48);
-  @include mq() {
-    margin-top: 0;
-  }
-}
-
-.p-sub-blog-detail__item:nth-child(n+3) {
-  @include mq() {
-    margin-top: rem(114);
-  }
-}
