@@ -10,17 +10,42 @@
       <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'ブログ記事一覧', thirdPage:'ブログ記事詳細'}) %>
   </div>
 
-  <main class="p-sub-blog-detail__main">
-    <div class="p-sub-blog-detail__inner l-inner">
-      <h1 class="p-sub-blog-detail__title">
+  <article class="p-sub-blog-detail__blog-article p-blog-article ">
+    <div class="p-blog-article__inner l-inner l-inner--small">
+      <h1 class="p-blog-article__title">
         タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
       </h1>
-      <time class="p-sub-blog-detail__date" datetime="2020-06-13">2020/06/13</time>
-      <div class="p-sub-blog-detail__category">カテゴリ１</div>
-      <figure class="p-sub-blog-detail__image">
-        <img src="" alt="">
+      <time class="p-blog-article__date" datetime="2020-06-13">2020/06/13</time>
+      <div class="p-blog-article__category">カテゴリ１</div>
+      <figure class="p-blog-article__image">
+        <img src="./images/blog/detail/detail001-image01.jpg" alt="">
       </figure>
-
+      <p class="p-blog-article__text">
+        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+      </p>
+      <h2 class="p-blog-article__heading2">見出し2</h2>
+      <p class="p-blog-article__text">
+        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+      </p>
+      <h3 class="p-blog-article__heading3">見出し3</h3>
+      <p class="p-blog-article__text">
+        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+      </p>
+      <figure class="p-blog-article__image">
+        <img src="./images/blog/detail/detail001-image01.jpg" alt="">
+      </figure>
+      <ul class="p-blog-article__unordered-list">
+        <li class="p-blog-article__unordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+        <li class="p-blog-article__unordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+        <li class="p-blog-article__unordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+        <li class="p-blog-article__unordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+      </ul>
+      <ol class="p-blog-article__ordered-list">
+        <li class="p-blog-article__ordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+        <li class="p-blog-article__ordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+        <li class="p-blog-article__ordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+        <li class="p-blog-article__ordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
+      </ol>
       <div class="l-pager">
         <%- include('./project/_p-pager') %>
       </div>
