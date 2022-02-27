@@ -1,9 +1,9 @@
 <%# newsCategoryは最大7文字（全角） %>
 
 <div class="p-news">
-  <div class="p-news__information">
-    <time class="p-news__date" datetime="<%= datetime %>"><%= date %></time>
-    <div class="p-news__category"><%= newsCategory %></div>
+  <div class="p-news__information p-information">
+    <time class="p-information__date" datetime="<%= datetime %>"><%= date %></time>
+    <div class="p-information__category"><%= newsCategory %></div>
   </div>
   <h3 class="p-news__title"><a href="<%= link %>"><%= newsTitle %></a></h3>
 </div>
