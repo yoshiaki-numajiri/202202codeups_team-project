@@ -82,9 +82,12 @@
 
 .p-top-news__btn {
   margin-top: rem(28);
-  text-align: center;
+  width: rem(335);
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
     margin-top: rem(0);
+    width: rem(360);
   }
 }
 

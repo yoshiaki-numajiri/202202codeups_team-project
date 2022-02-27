@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-top-btn {
+  display: block;
+  position: fixed;
+  right: rem(20);
+  bottom: rem(30);
+  z-index: 10;
+}

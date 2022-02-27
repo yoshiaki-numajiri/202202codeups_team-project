@@ -13,8 +13,12 @@
 
 .p-top-blog__btn {
   margin-top: rem(24);
+  width: rem(335);
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
     margin-top: rem(48);
     text-align: center;
+    width: rem(360);
   }
 }
