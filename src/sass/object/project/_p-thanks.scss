@@ -1,0 +1,44 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-thanks__main {
+  padding-top: rem(50);
+  text-align: center;
+  @include mq() {
+    min-height: calc(100vh - rem(130.5));
+  }
+}
+
+.p-thanks__title {
+  margin-top: rem(80);
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: math.div( 2em, 20);
+  @include mq() {
+    margin-top: rem(80);
+    font-size: rem(30);
+    letter-spacing: math.div( 2em, 30);
+  }
+}
+
+.p-thanks__message {
+  margin-top: rem(80);
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: math.div( 2em, 20);
+  @include mq() {
+    margin-top: rem(80);
+    font-size: rem(30);
+    letter-spacing: math.div( 2em, 30);
+  }
+}
+
+.p-thanks__btn {
+  margin-top: rem(80);
+  @include mq() {
+    width: rem(360);
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
