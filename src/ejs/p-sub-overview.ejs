@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+<body>
+  <header class="l-header">
+    <%- include('./common/_p-header') %>
+  </header>
+  <%- include('./project/_p-sub-mv',{pageTitle:'企業概要'}) %>
+
+  <div class="l-breadcrumb">
+    <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'企業概要', thirdPage:''}) %>
+  </div>
+
+  <main class="l-sub-overview p-sub-overview__main">
+    <div class="p-sub-overview__inner l-inner">
+      <dl class="p-sub-overview__items">
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">会社名</dt>
+          <dd class="p-sub-overview__description">株式会社CodeUps</dd>
+        </div>
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">設立</dt>
+          <dd class="p-sub-overview__description">テキストが入ります。</dd>
+        </div>
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">資本金</dt>
+          <dd class="p-sub-overview__description">テキストが入ります。</dd>
+        </div>
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">売上高</dt>
+          <dd class="p-sub-overview__description">テキストが入ります。</dd>
+        </div>
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">代表者</dt>
+          <dd class="p-sub-overview__description">テキストが入ります。</dd>
+        </div>
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">従業員数</dt>
+          <dd class="p-sub-overview__description">テキストが入ります。</dd>
+        </div>
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">事業内容</dt>
+          <dd class="p-sub-overview__description">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</dd>
+        </div>
+        <div class="p-sub-overview__item">
+          <dt class="p-sub-overview__term">所在地</dt>
+          <dd class="p-sub-overview__description">東京駅</dd>
+        </div>
+      </dl>
+    </div>
+  </main>
+
+  <div class="l-map p-map">
+    <div class="p-map__inner l-inner">
+      <div class="p-map__iframe">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.82803038087!2d139.76493611604354!3d35.68123618019454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1645928458022!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+
+  <%- include('./common/_p-footer') %>
+</body>
+
+</html>

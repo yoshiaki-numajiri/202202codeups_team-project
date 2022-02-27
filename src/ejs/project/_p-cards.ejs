@@ -4,20 +4,41 @@
 <%# 新着0、その他9のカードの記述 %>
 <%#- include('./project/_p-cards',{numberNew:'', number:'9'}) %>
 
+<%# 4枚並べる、新着0、その他4のカードの記述 %>
+<%#- include('./project/_p-cards',{cardType:'small', numberNew:'', number:'4'}) %>
+
 <div class="p-cards">
   <ul class="p-cards__list">
-    <% if( ! numberNew == "" ) { %>
-    <% for (var i=0; i < numberNew; i++) { %>
-      <li class="p-cards__item p-cards__item--new">
-      <%- include('_p-card') %>
-      </li>
+    <% if( cardType == "normal" ) { %>
+      <% if( ! numberNew == "" ) { %>
+       <% for (var i=0; i < numberNew; i++) { %>
+         <li class="p-cards__item p-cards__item--new">
+          <%- include('_p-card') %>
+         </li>
+      <% } %>
+      <% } %>
+      <% if( ! number == "" ) { %>
+      <% for (var i=0; i < number; i++) { %>
+       <li class="p-cards__item">
+        <%- include('_p-card') %>
+        </li>
+        <% } %>
       <% } %>
     <% } %>
-    <% if( ! number == "" ) { %>
-    <% for (var i=0; i < number; i++) { %>
-      <li class="p-cards__item">
-      <%- include('_p-card') %>
-      </li>
+    <% if( cardType == "small" ) { %>
+      <% if( ! numberNew == "" ) { %>
+       <% for (var i=0; i < numberNew; i++) { %>
+         <li class="p-cards__item p-cards__item--small p-cards__item--new">
+          <%- include('_p-card') %>
+         </li>
+      <% } %>
+      <% } %>
+      <% if( ! number == "" ) { %>
+      <% for (var i=0; i < number; i++) { %>
+       <li class="p-cards__item p-cards__item--small">
+        <%- include('_p-card') %>
+        </li>
+        <% } %>
       <% } %>
     <% } %>
   </ul>
