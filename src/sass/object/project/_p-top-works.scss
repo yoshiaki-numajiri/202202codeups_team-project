@@ -90,9 +90,11 @@
 .p-top-works__btn {
   margin-top: rem(26);
   text-align: center;
+  width: rem(335);
   @include mq(md) {
     margin-top: rem(48);
     display: flex;
     justify-content: left;
+    width: rem(360);
   }
 }
