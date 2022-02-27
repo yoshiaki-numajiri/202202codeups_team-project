@@ -1,0 +1,21 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-relatives__title {
+  padding-top: rem(9);
+  padding-bottom: rem(10);
+  border: 1px solid $white ;
+  font-weight: $regular;
+  letter-spacing: math.div( 2em, 16);
+  text-align: center;
+  @include mq() {
+    background-color: $black3;
+  }
+}
+
+.p-relateves__cards {
+  margin-top: rem(32);
+  @include mq() {
+    margin-top: rem(80);
+  }
+}

@@ -38,8 +38,10 @@
       <%- include('./project/_p-sub-mv',{pageTitle:'お知らせ'}) %>
       
       <p>カードリスト project/_p-cards</p>
-      <%- include('./project/_p-cards',{numberNew:'1', number:'2'}) %>
-      <%- include('./project/_p-cards',{numberNew:'', number:'9'}) %>
+      <%- include('./project/_p-cards',{cardType:'normal', numberNew:'1', number:'2'}) %>
+      <%- include('./project/_p-cards',{cardType:'normal', numberNew:'', number:'9'}) %>
+      <%- include('./project/_p-cards',{cardType:'small', numberNew:'', number:'4'}) %>
+
       <%#- include('./project/_p-cards') %>
       
     </div>
