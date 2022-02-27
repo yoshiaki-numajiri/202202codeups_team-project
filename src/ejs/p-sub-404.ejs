@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+<body>
+  <header class="l-header">
+    <%- include('./common/_p-header') %>
+  </header>
+
+  <main class="p-sub-404__main">
+    <div class="p-sub-404__inner l-inner">
+      <div class="p-sub-404__body">
+        <h1 class="p-sub-404__head">404 Not Found</h1>
+        <p class="p-sub-404__text"><span>お探しのページは</span><span>見つかりませんでした。</span></p>
+        <div class="p-sub-404__btn u-desktop">
+          <%- include('./component/_c-btn',{text:'TOPへ', link:'#', btntype:'normal'}) %>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="l-footer">
+    <%- include('./common/_p-footer') %>
+  </div>
+  
+  <div class="l-top-btn">
+    <%- include('./component/_c-top-btn') %>
+  </div>
+</body>
+
+</html>
