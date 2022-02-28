@@ -12,7 +12,7 @@ var swiper = new Swiper(".mySwiper", {
   pagination: { 
     el: '.swiper-pagination', //ページネーションの要素
     type: 'bullets', //ページネーションの種類
-    clickable: true, //クリックに反応させる
+    // clickable: true, //クリックに反応させる
   },
 });
 

@@ -1,5 +1,9 @@
 @use "global" as *;
 
+.p-card {
+  display: block;
+}
+
 .p-card__img {
   width: 100%;
   position: relative;
