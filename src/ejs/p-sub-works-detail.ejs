@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <header class="l-header">
+      <%- include('./common/_p-header') %>
+    </header>
+
+  <div class="l-breadcrumb l-breadcrumb--detail">
+      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'制作実績', thirdPage:'制作実績詳細'}) %>
+  </div>
+
+<main class="p-sub-works-detail__main">
+  <div class="p-sub-works-detail__inner l-inner">
+    <h1 class="p-sub-works-detail__title">
+      〇〇株式会社　制作実績
+    </h1>
+    <time class="p-sub-works-detail__date" datetime="2020-06-13">2020/06/13</time>
+    <div class="p-sub-works-detail__category">カテゴリ１</div>
+
+    <div class="gallery">
+      <div class="swiper-container gallery-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_1.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_2.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_3.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_1.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_2.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_3.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+  
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_1.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_2.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_3.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_1.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_2.jpg" alt="">
+            </figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="p-sub-works-detail__img slide-img">
+            <img src="images/top/works_3.jpg" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <div class="p-sub-works-detail__wrapper">
+      <div class="p-sub-works-detail__swiper">
+        <div class="swiper2 mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_1.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_2.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_3.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_1.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_2.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_3.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_1.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_2.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-sub-works-detail__thumbs">
+        <div class="swiper2 mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_1.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_2.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_3.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_1.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_2.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_3.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_1.jpg" alt="">
+              </figure>
+            </div>
+            <div class="swiper-slide">
+              <figure class="p-sub-works-detail__img slide-img">
+              <img src="images/top/works_2.jpg" alt="">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="p-sub-works__body">
+      <div class="p-sub-works__point">
+        <span class="p-point__title">制作のポイント</span>
+        <p class="p-point__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+      <div class="p-sub-works__point">
+        <span class="p-point__title">デザインのポイント</span>
+        <p class="p-point__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+      <div class="p-sub-works__point">
+        <span class="p-point__title">その他</span>
+        <p class="p-point__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+      </div>
+    </div>
+
+    <div class="l-pager">
+      <%- include('./project/_p-pager') %>
+    </div>
+
+    <div class="p-sub-works__recommend">
+      <p>おすすめ記事</p>
+    </div>
+
+    <div class="p-sub-works__cards">
+      <%- include('./project/_p-cards',{numberNew:'', number:'4'}) %>
+    </div>
+  </div>
+</main>
+
+
+
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+  
+  <div class="l-footer">
+    <%- include('./common/_p-footer') %>
+  </div>
+
+  <div class="l-top-btn">
+    <%- include('./component/_c-top-btn') %>
+  </div>
+  
+</body>
+</html>
