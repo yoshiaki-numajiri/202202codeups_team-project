@@ -11,15 +11,17 @@
   </div>
 
 <main class="p-sub-works-detail__main">
-  <div class="p-sub-works-detail__inner l-inner">
+  <div class="p-sub-works-detail__inner l-inner l-inner--small">
     <h1 class="p-sub-works-detail__title">
       〇〇株式会社　制作実績
     </h1>
-    <time class="p-sub-works-detail__date" datetime="2020-06-13">2020/06/13</time>
-    <div class="p-sub-works-detail__category">カテゴリ１</div>
+    <div class="p-works-article__information p-information">
+      <time class="p-information__date" datetime="2020-06-13">2020/06/13</time>
+      <div class="p-information__category">カテゴリ１</div>
+    </div>
 
-    <!-- <div class="gallery">
-      <div class="swiper-container gallery-slider">
+    <div class="p-sub-works-detail__gallery">
+      <div class="p-sub-works-detail__swiper swiper-container gallery-slider">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <figure class="p-sub-works-detail__img slide-img">
@@ -56,7 +58,7 @@
         <div class="swiper-button-next"></div>
       </div>
   
-      <div class="swiper-container gallery-thumbs">
+      <div class="p-sub-works-detail__swiper swiper-container gallery-thumbs">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <figure class="p-sub-works-detail__img slide-img">
@@ -90,7 +92,7 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     
     <!-- <div class="p-sub-works-detail__wrapper">
       <div class="p-sub-works-detail__swiper">
@@ -204,17 +206,22 @@
     </div>
 
     <div class="l-pager">
-      <%- include('./project/_p-pager') %>
+      <div class="p-pager">
+        <a class="first" href="#">prev</a>
+        <a class="page" href="#">一覧</a>
+        <a class="last" href="#">next</a>
+      </div>      </div>
     </div>
 
-    <div class="p-sub-works__recommend">
-      <p>おすすめ記事</p>
-    </div>
-
-    <div class="p-sub-works__cards">
-      <%- include('./project/_p-cards',{numberNew:'', number:'4'}) %>
-    </div>
-  </div>
+    <section class="l-relatives p-relatives">
+      <div class="p-relatives__inner l-inner">
+        <h2 class="p-relatives__title">関連記事</h2>
+        <div class="p-relateves__cards p-cards">
+          <%- include('./project/_p-cards',{cardType:'small', numberNew:'', number:'4'}) %>
+        </div>
+      </div>
+    </section>
+  
 </main>
 
 
@@ -223,9 +230,9 @@
     <%- include('./project/_p-contact') %>
   </div>
   
-  <div class="l-footer">
+  
     <%- include('./common/_p-footer') %>
-  </div>
+  
 
   <div class="l-top-btn">
     <%- include('./component/_c-top-btn') %>

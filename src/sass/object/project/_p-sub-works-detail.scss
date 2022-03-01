@@ -11,70 +11,18 @@
 
 }
 
-.p-sub-works-detail__wrapper {
-  
-}
-
-.gallery {
-  width: 100%;
-  max-width: rem(375);
-  
-  
-  //メインスライド
-  &-slider {
-      width: 100%;
-      overflow: hidden;
-      // height: auto;
-      
-      
-
-      .swiper-slide {
-          width: rem(375);
-          height: rem(251);
-          @include mq(md) {
-            width: rem(779);
-          }
-          
-          img {
-              display: block;
-              width: auto;
-              height: 100%;
-              margin: 0 auto;
-          }
-      }
-  }
-  
-  //サムネイルスライド
-  &-thumbs {
-      width: 100%;
-      padding: 0;
-      overflow: hidden;
-      @include mq(md) {
-        overflow: initial;
-      }
-
-      .swiper-slide {
-          width: rem(163);
-          height: rem(163);
-          text-align: center;
-          overflow: hidden;
-          // opacity: .1;
-          
-          &-active {
-              opacity: 1;
-          }
-          
-          img {
-              width: auto;
-              height: 100%;
-          }
-      }
+.p-sub-works-detail__gallery {
+  margin-top: rem(16);
+  @include mq(md) {
+    position: relative;
+    margin-top: rem(32);
   }
 }
 
 .p-sub-works-detail__swiper {
+  overflow: hidden;
   @include mq(md) {
-    position: relative;
+    
   }
 }
 
@@ -82,20 +30,30 @@
   width: 100%;
   position: relative;
   @include mq(md) {
-    max-width: rem(557);
+    max-width: rem(800);
     width: 100%;
   }
 }
 
 .p-sub-works-detail__img::after {
   position: absolute;
-  
-
+  top: 0;
+  left: 0;
+  right: 0;
   content: "";
   width: 100%;
   height: 100%;
   background-color: $black1;
   opacity: 0.2;
+}
+
+.gallery-thumbs {
+  margin-top: rem(32);
+}
+
+.gallery-thumbs .swiper-slide {
+  width: rem(168);
+  height: rem(168);
 }
 
 .p-sub-works__body {
@@ -137,25 +95,4 @@
   padding: rem(56) rem(10) rem(33);
   border: 1px solid $white;
   margin-top: rem(-26);
-}
-
-.p-sub-works__recommend {
-  @include txt(rem(16), $regular, $white, center);
-  @include txt-option(auto, 0.125em); // 2px/fsz16
-  display: inline-block;
-  width: rem(335);
-  width: 100%;
-  padding: rem(10) rem(110);
-  border: rem(1) solid $white;
-  vertical-align: top;
-  @include mq(md) {
-    max-width: rem(1100);
-    padding: rem(9) rem(450);
-    background-color: $black3;
-    margin-top: rem(104);
-  }
-}
-
-.p-sub-works__cards {
-  margin-top: rem(32);
 }
