@@ -127,11 +127,13 @@
   display: inline-block;
   margin-top: rem(26);
   width: rem(335);
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   @include mq(md) {
     margin-top: rem(48);
     width: rem(360);
     display: flex;
     justify-content: left;
+    width: rem(360);
   }
 }

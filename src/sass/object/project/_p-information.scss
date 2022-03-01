@@ -1,0 +1,18 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-information__date {
+  display: inline-block;
+  margin-right: rem(32);
+}
+
+.p-information__category {
+  display: inline-block;
+  padding: rem(6) rem(22);
+  border: 1px solid $white;
+  font-size: rem(14);
+  @include mq() {
+    height: fit-content;
+  }
+}
+
