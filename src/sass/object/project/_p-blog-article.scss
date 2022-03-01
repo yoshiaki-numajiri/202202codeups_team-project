@@ -21,7 +21,7 @@
   }
 }
 
-.p-blog-article__image {
+.p-blog-article figure {
   position: relative;
   margin-top: rem(16);
   margin-right: calc(50% - 50vw);
@@ -33,7 +33,7 @@
   }
 }
 
-.p-blog-article__image::before {
+.p-blog-article figure::before {
   content: "";
   display: block;
   padding-top: 100% * math.div(251, 375);
@@ -42,7 +42,7 @@
   }
 }
 
-.p-blog-article__image img {
+.p-blog-article figure img {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +53,8 @@
   height: 100%;
 }
 
-.p-blog-article__text {
+// .p-blog-article__text {
+.p-blog-article p {
   margin-top: rem(16);
   letter-spacing: math.div( 0.4em, 16 );
   line-height: math.div( 35, 16 );
@@ -62,7 +63,8 @@
   }
 }
 
-.p-blog-article__heading2 {
+// .p-blog-article__heading2 {
+.p-blog-article h2 {
   margin-top: rem(16);
   padding-left: rem(9);
   border-left: rem(3) solid $gray;
@@ -74,7 +76,9 @@
   }
 }
 
-.p-blog-article__heading3 {
+// .p-blog-article__heading3 {
+.p-blog-article h3 {
+
   position: relative;
   display: inline-block;
   margin-top: rem(16);
@@ -87,7 +91,8 @@
   }
 }
 
-.p-blog-article__heading3::after {
+// .p-blog-article__heading3::after {
+.p-blog-article h3::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -97,7 +102,8 @@
   background: linear-gradient(90deg, $accent-color2 0%, $accent-color2 33.6405529%, $white 66.3594471%, $white 100%);
 }
 
-.p-blog-article__unordered-list {
+// .p-blog-article__unordered-list {
+.p-blog-article ul {
   margin-top: rem(16);
   letter-spacing: math.div(0.4em, 16);
   line-height: math.div(35, 16);
@@ -107,11 +113,13 @@
 
 }
 
-.p-blog-article__unordered-item::before {
+// .p-blog-article__unordered-item::before {
+.p-blog-article ul li::before {
   content: "・";
 }  
 
-.p-blog-article__ordered-list {
+// .p-blog-article__ordered-list {
+.p-blog-article ol {
   margin-top: rem(16);
   counter-reset: number 0;
   letter-spacing: math.div(0.4em, 16);
@@ -121,6 +129,7 @@
   }
 }
 
-.p-blog-article__ordered-item::before {
+// .p-blog-article__ordered-item::before {
+.p-blog-article ol li::before {
   counter-increment: number 1;
   content: counter(number) " ";}
