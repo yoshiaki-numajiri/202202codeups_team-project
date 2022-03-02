@@ -20,17 +20,19 @@
 }
 
 .p-sub-works-detail__swiper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-slider,
+.gallery-thumbs {
   overflow: hidden;
-  @include mq(md) {
-    
-  }
 }
 
 .p-sub-works-detail__img {
   width: 100%;
   position: relative;
   @include mq(md) {
-    max-width: rem(800);
     width: 100%;
   }
 }

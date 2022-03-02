@@ -1,4 +1,5 @@
 @use "global" as *;
+@use "sass:math";
 
 .p-top-news {
   padding: 0 $padding-sp;
@@ -13,6 +14,12 @@
   }
 }
 
+.p-top-news__wrapper {
+  @include mq(md) {
+    width: 100% * math.div(900, 1042);
+  }
+}
+
 .p-top-news__btn {
   margin-top: rem(28);
   width: rem(335);
@@ -20,6 +27,6 @@
   margin-right: auto;
   @include mq(md) {
     margin-top: rem(0);
-    width: rem(134);
+    width: 100% * math.div(134, 1042);
   }
 }
