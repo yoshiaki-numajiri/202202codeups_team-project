@@ -31,17 +31,17 @@ new Swiper('.mySwiper-lg', swipeOption);
 
 //メインスライド
 var slider = new Swiper ('.gallery-slider', {
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
   slidesPerView: 1,
   centeredSlides: true,
   loop: true,
-  loopedSlides: 6, //スライドの枚数と同じ値を指定
+  loopedSlides: 8, //スライドの枚数と同じ値を指定
   navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-  },
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  }
 });
 
 //サムネイルスライド
