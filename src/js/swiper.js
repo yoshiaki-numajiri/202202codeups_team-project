@@ -40,8 +40,8 @@ var slider = new Swiper ('.gallery-slider', {
   loopedSlides: 8, //スライドの枚数と同じ値を指定
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  }
+    prevEl: ".swiper-button-prev",
+  },
 });
 
 //サムネイルスライド
