@@ -11,15 +11,17 @@
 }
 
 .p-footer-nav__item {
-  padding: rem(4) 0;
+  
 }
 
 .p-footer-nav__item a {
+  display: block;
   @include txt(rem(16), $regular, $white, center);
-  @include txt-option(1, 0.075em); // 1.2px/fsz16
-  padding: 0 rem(16);
+  @include txt-option(auto, 0.075em); // 1.2px/fsz16
+  padding: rem(4) 0;
   @include mq(md) {
     position: relative;
+    padding: 0 rem(16);
   }
 }
 
