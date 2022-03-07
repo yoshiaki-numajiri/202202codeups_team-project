@@ -40,6 +40,10 @@
 
 .p-header-nav__item {
   height: 100%;
+  width: 100%;
+  @include mq() {
+    width: auto;
+  }
 }
 
 .p-header-nav__item--white a {
