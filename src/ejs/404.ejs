@@ -7,13 +7,13 @@
     <%- include('./common/_p-header') %>
   </header>
 
-  <main class="p-sub-404__main">
+  <main class="l-sub-404 p-sub-404">
     <div class="p-sub-404__inner l-inner">
       <div class="p-sub-404__body">
         <h1 class="p-sub-404__head">404 Not Found</h1>
         <p class="p-sub-404__text"><span>お探しのページは</span><span>見つかりませんでした。</span></p>
         <div class="p-sub-404__btn u-desktop">
-          <%- include('./component/_c-btn',{text:'TOPへ', link:'#', btntype:'normal'}) %>
+          <%- include('./component/_c-btn',{text:'TOPへ', link:'index.html', btntype:'normal'}) %>
         </div>
       </div>
     </div>
@@ -23,9 +23,5 @@
     <%- include('./common/_p-footer') %>
   </div>
   
-  <div class="l-top-btn">
-    <%- include('./component/_c-top-btn') %>
-  </div>
 </body>
-
 </html>

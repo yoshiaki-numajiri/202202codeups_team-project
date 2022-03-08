@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.p-sub-404__main {
-  padding-top: rem(130);
-  @include mq(md) {
-    padding-top: rem(200);
-  }
-}
-
 .p-sub-404__body {
   letter-spacing: 0.125em;
 }
