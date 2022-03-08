@@ -6,13 +6,13 @@
   <header class="l-header">
     <%- include('./common/_p-header') %>
   </header>
-  <%- include('./project/_p-sub-mv',{pageTitle:'お問い合わせ'}) %>
+    <%- include('./project/_p-sub-mv',{pageTitle:'お問い合わせ'}) %>
 
   <div class="l-breadcrumb">
     <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'お問い合わせ', thirdPage:''}) %>
   </div>
 
-  <main class="p-sub-contact__main">
+  <main class="l-sub-contact p-sub-contact">
     <div class="p-sub-contact__inner l-inner">
       <div class="p-sub-contact__content">
         <div class="p-sub-contact__head">
@@ -65,7 +65,6 @@
       <div class="p-sub-contact__btn">
         <%- include('./component/_c-btn',{text:'送信', link:'thanks.html', btntype:'submit'}) %>
       </div>
-
     </div>
   </main>
 
@@ -73,9 +72,5 @@
     <%- include('./common/_p-footer') %>
   </div>
 
-  <div class="l-top-btn">
-    <%- include('./component/_c-top-btn') %>
-  </div>
 </body>
-
 </html>

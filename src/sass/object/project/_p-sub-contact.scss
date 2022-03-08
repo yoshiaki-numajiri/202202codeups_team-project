@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.p-sub-contact__main {
-  margin-top: rem(85);
-  @include mq(md) {
-    margin-top: rem(122);
-  }
-}
-
 .p-sub-contact__inner {
   @include mq(md) {
     width: rem(700);

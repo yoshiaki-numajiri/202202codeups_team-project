@@ -1,12 +1,5 @@
 @use "global" as *;
 
-.p-sub-works-detail__main {
-  margin-top: rem(53);
-  @include mq(md) {
-    margin-top: rem(91);
-  }
-}
-
 .p-sub-works-detail__inner {
 
 }

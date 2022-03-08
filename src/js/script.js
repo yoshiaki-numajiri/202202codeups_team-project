@@ -25,7 +25,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     });
   });
 
-  var topBtn = $('.page-top');
+  var topBtn = $('.js-page-top');
   topBtn.hide();
 
   // ボタンの表示設定
