@@ -49,23 +49,15 @@
         <li class="p-blog-article__ordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
         <li class="p-blog-article__ordered-item">リストが入ります。リストが入ります。リストが入ります。リストが入ります。</li>
       </ol>
-      <div class="l-pager">
-        <div class="p-pager">
-          <a class="first" href="#">prev</a>
-          <a class="page" href="#">一覧</a>
-          <a class="last" href="#">next</a>
-        </div>      </div>
     </div>
   </article>
 
-  <section class="l-relatives p-relatives">
-    <div class="p-relatives__inner l-inner">
-      <h2 class="p-relatives__title">関連記事</h2>
-      <div class="p-relateves__cards p-cards">
-        <%- include('./project/_p-cards',{cardType:'small', numberNew:'', number:'4'}) %>
-      </div>
-    </div>
+  <div class="l-pager">
+    <%- include('./project/_p-pager2') %>
+  </div>
 
+  <section class="l-relatives">
+    <%- include('./project/_p-relatives') %>
   </section>
 
   <div class="l-contact">
@@ -73,6 +65,6 @@
   </div>
 
   <%- include('./common/_p-footer') %>
-</body>
 
+</body>
 </html>
