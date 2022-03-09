@@ -1,11 +1,7 @@
 @use "global" as *;
 
 .p-sub-blog-archive__main {
-  margin-top: rem(85);
   width: 100%;
-  @include mq() {
-    margin-top: rem(115);
-  }
 }
 
 .p-sub-blog-archive__list {

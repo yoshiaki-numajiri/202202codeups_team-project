@@ -6,67 +6,16 @@
   <header class="l-header">
     <%- include('./common/_p-header') %>
   </header>
+  
     <%- include('./project/_p-sub-mv',{pageTitle:'お問い合わせ'}) %>
 
   <div class="l-breadcrumb">
     <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'お問い合わせ', thirdPage:''}) %>
   </div>
 
-  <main class="l-sub-contact p-sub-contact">
-    <div class="p-sub-contact__inner l-inner">
-      <div class="p-sub-contact__content">
-        <div class="p-sub-contact__head">
-          <p class="p-sub-contact__title">※会社名・団体名</p>
-        </div>
-        <div class="p-sub-contact__item p-contact-text">
-          <input class="p-contact-text__text" type="text" organization="organization" autocomplete="organization" placeholder="テキストがはいります">
-        </div>
-      </div>
-      <div class="p-sub-contact__content">
-        <div class="p-sub-contact__head">
-          <p class="p-sub-contact__title">※部署名</p>
-        </div>
-        <div class="p-sub-contact__item p-contact-text">
-          <input class="p-contact-text__text" type="text" organization="organization" autocomplete="organization" placeholder="テキストがはいります">
-        </div>
-      </div>
-      <div class="p-sub-contact__content">
-        <div class="p-sub-contact__head">
-          <p class="p-sub-contact__title">※お名前</p>
-        </div>
-        <div class="p-sub-contact__item p-contact-text">
-          <input class="p-contact-text__text" type="text" name="name" autocomplete="name" placeholder="テキストがはいります">
-        </div>
-      </div>
-      <div class="p-sub-contact__content">
-        <div class="p-sub-contact__head">
-          <p class="p-sub-contact__title">※ふりがな</p>
-        </div>
-        <div class="p-sub-contact__item p-contact-text">
-          <input class="p-contact-text__text" type="text" name="name" autocomplete="name" placeholder="テキストがはいります">
-        </div>
-      </div>
-      <div class="p-sub-contact__content">
-        <div class="p-sub-contact__head">
-          <p class="p-sub-contact__title">※メールアドレス</p>
-        </div>
-        <div class="p-sub-contact__item p-contact-text">
-          <input class="p-contact-text__text" type="email" email="email" autocomplete="email" placeholder="テキストがはいります">
-        </div>
-      </div>
-      <div class="p-sub-contact__content">
-        <div class="p-sub-contact__head">
-          <p class="p-sub-contact__title">※お問い合わせ内容</p>
-        </div>
-        <div class="p-sub-contact__item p-contact-textarea">
-          <textarea class="p-contact-textarea__text" placeholder="テキストがはいります"></textarea>
-        </div>
-      </div>
-      <div class="p-sub-contact__btn">
-        <%- include('./component/_c-btn',{text:'送信', link:'thanks.html', btntype:'submit'}) %>
-      </div>
-    </div>
-  </main>
+  <section class="l-sub-contact">
+    <%- include('./project/_p-sub-contact') %>
+  </section>
 
   <div class="l-footer">
     <%- include('./common/_p-footer') %>
