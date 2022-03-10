@@ -1,11 +1,7 @@
 @use "global" as *;
 @use "sass:math";
 
-.p-sub-blog-detail__blog-article {
+.p-sub-blog-detail {
   width: 100%;
-  margin-top: rem(78);
-  @include mq() {
-    margin-top: rem(91);
-  }
 }
 
