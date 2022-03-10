@@ -8,13 +8,16 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  margin-top: rem(-16);
+  width: 100%;
 }
 
 .p-category__item {
-  display: inline-block;
+  display: block;
   @include txt(rem(16), $regular, $white, center);
   @include txt-option(1.438, 0.125em);
   padding: rem(3.5) rem(5.5);
+  margin-top: rem(16);
   margin-right: rem(12);
   text-transform: uppercase;
 }
