@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-thanks {
+  padding-top: rem(50);
+  @include mq() {
+    min-height: calc(100vh - rem(130.5));
+  }
+}

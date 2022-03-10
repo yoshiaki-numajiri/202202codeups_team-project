@@ -1,12 +1,8 @@
 @use "global" as *;
 @use "sass:math";
 
-.p-thanks__main {
-  padding-top: rem(50);
+.p-thanks {
   text-align: center;
-  @include mq() {
-    min-height: calc(100vh - rem(130.5));
-  }
 }
 
 .p-thanks__title {
