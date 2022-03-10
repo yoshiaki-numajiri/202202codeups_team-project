@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-blog-article {
+  margin-top: rem(78);
+  @include mq() {
+    margin-top: rem(91);
+  }
+}
