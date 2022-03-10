@@ -1,12 +1,8 @@
 @use "global" as *;
 @use "sass:math";
 
-.p-sub-works__main {
+.p-sub-works {
   width: 100%;
-  margin-top: rem(120);
-  @include mq() {
-    margin-top: rem(115);
-  }
 }
 
 .p-sub-works__list {
