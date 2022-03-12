@@ -28,8 +28,6 @@
   @include mq(md) {
     margin-top: rem(0);
     width: 100% * math.div(134, 1042);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: rem(3);
   }
 }
