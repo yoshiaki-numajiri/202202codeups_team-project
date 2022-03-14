@@ -117,7 +117,7 @@
 .p-top-overview__text {
   margin-top: rem(24);
   @include txt(rem(16), $regular, $white, left);
-  @include txt-option(auto, 0.125em); // 2px/fsz16
+  @include txt-option(1.5, 0.125em); // 2px/fsz16
   @include mq(md) {
     @include txt-option(2.188, 0.03em); // 35/fsz16,0.5px/fsz16
   }
