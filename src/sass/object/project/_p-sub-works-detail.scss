@@ -84,7 +84,7 @@
   margin-left: rem(24);
   background-color: $black1;
   @include mq(md) {
-    line-height: auto;
+    line-height: 1.5;
   }
 }
 

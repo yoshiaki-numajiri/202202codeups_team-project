@@ -9,6 +9,10 @@
   }
 }
 
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-color: #c4c4c4;
+}
+
 .swiper-wrapper {
   @keyframes zoomUp {
     0% {
