@@ -63,7 +63,7 @@
   margin-top: rem(4);
 }
 
-.p-card-info {
+.p-card__card-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,7 +75,7 @@
   }
 }
 
-.p-card-info__label-category {
+.p-card__card-info__label-category {
   @include txt(rem(14), $regular, $black0, center);
   @include txt-option(1.85, 0.071em); // 1px/fsz14
   padding: rem(0.5);
@@ -83,7 +83,7 @@
   min-width: rem(67);
 }
 
-.p-card-info__date {
+.p-card__card-info__date {
   @include txt(rem(14), $regular, none, center);
   @include txt-option(1.85, 0.071em); // 1px/fsz14
 }

@@ -4,6 +4,13 @@
 
 }
 
+.p-works-article__information.p-information {
+  margin-top: rem(16);
+  @include mq(md) {
+    margin-top: rem(32);
+  }
+}
+
 .p-sub-works-detail__gallery {
   position: relative;
   margin-top: rem(16);
