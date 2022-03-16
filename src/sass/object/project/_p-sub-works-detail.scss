@@ -112,6 +112,7 @@
   top: 50%;
   margin-top: rem(-100);
   z-index: 1;
+  outline: none;
   @include mq(md) {
     width: rem(50);
     height: rem(50);
@@ -141,6 +142,7 @@
   top: 50%;
   margin-top: rem(-100);
   z-index: 1;
+  outline: none;
   @include mq(md) {
     width: rem(50);
     height: rem(50);
