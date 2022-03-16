@@ -105,42 +105,60 @@
 
 .swiper-button-prev {
   background-image: none;
-  width: rem(50);
-  height: rem(50);
+  width: rem(30);
+  height: rem(30);
   background-color: $black1;
   border-radius: 50%;
   top: 50%;
   margin-top: rem(-100);
   z-index: 1;
+  outline: none;
+  @include mq(md) {
+    width: rem(50);
+    height: rem(50);
+  }
 }
 
 .swiper-button-prev:after {
   content: "";
     border-top: 3px solid $accent-color2;
     border-right: 3px solid $accent-color2;
-    width: rem(18);
-    height: rem(18);
+    width: rem(14);
+    height: rem(14);
     transform: rotate(-135deg);
     margin-left: rem(5);
+    @include mq(md) {
+      width: rem(18);
+      height: rem(18);
+    }
 }
 
 .swiper-button-next {
   background-image: none;
-  width: rem(50);
-  height: rem(50);
+  width: rem(30);
+  height: rem(30);
   background-color: $black1;
   border-radius: 50%;
   top: 50%;
   margin-top: rem(-100);
   z-index: 1;
+  outline: none;
+  @include mq(md) {
+    width: rem(50);
+    height: rem(50);
+  }
 }
 
 .swiper-button-next:after {
   content: "";
     border-top: 3px solid $accent-color2;
     border-right: 3px solid $accent-color2;
-    width: rem(18);
-    height: rem(18);
+    width: rem(14);
+    height: rem(14);
     transform: rotate(45deg);
     margin-right: rem(5);
+    @include mq(md) {
+      width: rem(18);
+      height: rem(18);
+    }
 }
