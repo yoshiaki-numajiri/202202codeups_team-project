@@ -17,7 +17,7 @@
   @include txt(rem(16), $regular, $white, center);
   @include txt-option(1.438, 0.125em);
   padding: rem(3.5) rem(5.5);
-  margin-top: rem(16);
+  // margin-top: rem(16);
   margin-right: rem(12);
   text-transform: uppercase;
 }

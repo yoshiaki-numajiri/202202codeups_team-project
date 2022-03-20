@@ -2,7 +2,7 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".js-mySwiper", {
   autoplay: {
     delay: 5000,
   },
@@ -30,7 +30,7 @@ new Swiper('.mySwiper-lg', swipeOption);
 //swiper works-detail
 
 //メインスライド
-var slider = new Swiper ('.gallery-slider', {
+var slider = new Swiper ('.js-gallery-slider', {
   // autoplay: {
   //   delay: 3000,
   // },
@@ -45,7 +45,7 @@ var slider = new Swiper ('.gallery-slider', {
 });
 
 //サムネイルスライド
-var thumbs = new Swiper ('.gallery-thumbs', {
+var thumbs = new Swiper ('.js-gallery-thumbs', {
   slidesPerView: 'auto',
   spaceBetween: 10,
   centeredSlides: true,

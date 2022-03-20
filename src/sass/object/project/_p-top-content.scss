@@ -1,9 +1,7 @@
 @use "global" as *;
 
 .p-top-content {
-  @include mq(md) {
-    padding-top: rem(180);
-  }
+  
 }
 
 .p-top-content__inner {
