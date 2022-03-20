@@ -1,7 +1,9 @@
 @use "global" as *;
 
-.p-sub-works-detail__inner {
-
+.p-sub-works-detail__inner.l-inner {
+  @include mq(md) {
+    width: rem(850);
+  }
 }
 
 .p-works-article__information.p-information {
@@ -28,8 +30,8 @@
   margin-right: auto;
 }
 
-.gallery-slider,
-.gallery-thumbs {
+.js-gallery-slider,
+.js-gallery-thumbs {
   overflow: hidden;
 }
 
@@ -53,11 +55,11 @@
   opacity: 0.2;
 }
 
-.gallery-thumbs {
+.js-gallery-thumbs {
   margin-top: rem(32);
 }
 
-.gallery-thumbs .swiper-slide {
+.js-gallery-thumbs .swiper-slide {
   max-width: rem(168);
   width: 100%;
 }
