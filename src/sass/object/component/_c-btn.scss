@@ -13,6 +13,7 @@
   letter-spacing: math.div( 2em, 20 );
   text-align: center;
   text-indent: math.div(2em, 20);
+  vertical-align: top;
   @include mq() {
     width: rem(360);
     padding-top: rem(18);
