@@ -3,35 +3,20 @@
 
 .p-sub-mv {
   position: relative;
-  width: 100%;
-}
-
-.p-sub-mv::before {
-  content: "";
-  display: block;
-  padding-top: 100% * math.div( 425, 375 );
-  @include mq() {
-    padding-top: 100% * math.div( 370, 1280 );
-
-  }
-}
-
-.p-sub-mv__background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: rem(425);
   object-fit: cover;
   background-image: url(../images/common/sub-mv__background--sp.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  @include mq(md) {
+  @include mq() {
+    height: rem(370);
     background-image: url(../images/common/sub-mv__background--pc.jpg);
+
   }
 }
 
