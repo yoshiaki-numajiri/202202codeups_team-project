@@ -1,18 +1,8 @@
 @use "global" as *;
 
 .l-sub-news {
-  max-width: rem(540);
-  width: 100%;
-	height: inherit;
   margin-top: rem(85);
-  margin-right: auto;
-  margin-left: auto;
-	padding-right: $padding-sp;
-	padding-left: $padding-sp;
   @include mq(md) {
-		max-width: $l-inner--middle + strip-unit($padding-pc) * 2;
     margin-top: rem(69);
-		padding-right: $padding-pc;
-		padding-left: $padding-pc;
 	}
 }
