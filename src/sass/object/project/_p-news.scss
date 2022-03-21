@@ -9,7 +9,7 @@
 
 .p-news__information {
   @include mq() {
-    width: 100% * math.div(272, strip-unit($l-inner--middle) );
+    width: 100% * math.div( 272, 860 );
     margin-right: rem(16);
   }
 }
