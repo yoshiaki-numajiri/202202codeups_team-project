@@ -105,7 +105,7 @@
   background: linear-gradient(90deg, $accent-color2 0%, $accent-color2 33.6405529%, $white 66.3594471%, $white 100%);
 }
 
-// .p-blog-article__unordered-list {
+// .p-blog-article__unordered-items {
 .p-blog-article ul {
   margin-top: rem(16);
   letter-spacing: math.div(0.4em, 16);
@@ -121,7 +121,7 @@
   content: "・";
 }  
 
-// .p-blog-article__ordered-list {
+// .p-blog-article__ordered-items {
 .p-blog-article ol {
   margin-top: rem(16);
   counter-reset: number 0;
