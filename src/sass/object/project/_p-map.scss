@@ -9,10 +9,10 @@
   position: relative;
 }
 
-.p-map__iframe::after {
-  content: "";
+.p-map__iframe::before {
+  padding-top: 80%; // 300/375 //
   display: block;
-  padding-top: 80%;
+  content: "";
   @include mq(md) {
     padding-top: 33.3636%;
   }

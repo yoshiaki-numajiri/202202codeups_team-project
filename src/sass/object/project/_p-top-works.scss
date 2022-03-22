@@ -11,9 +11,6 @@
 
 .p-top-works__head {
   position: relative;
-  @include mq(md) {
-    margin-top: rem(213);
-  }
 }
 
 .p-top-works__wrapper {
@@ -91,13 +88,9 @@
   display: inline-block;
   margin-top: rem(26);
   width: rem(335);
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
   @include mq(md) {
     margin-top: rem(48);
-    width: rem(360);
-    display: flex;
-    justify-content: left;
     width: rem(360);
   }
 }
