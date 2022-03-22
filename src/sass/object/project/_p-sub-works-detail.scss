@@ -38,12 +38,60 @@
 .p-sub-works-detail__img {
   width: 100%;
   position: relative;
-  @include mq(md) {
-    width: 100%;
-  }
+}
+
+.p-sub-works-detail__img::before {
+  padding-top: 66.9333%; // 251/375 //
+  display: block;
+  content: "";
+}
+
+.p-sub-works-detail__img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
 }
 
 .p-sub-works-detail__img::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: $black1;
+  opacity: 0.2;
+}
+
+.p-sub-works-detail__img2 {
+  width: 100%;
+  position: relative;
+}
+
+.p-sub-works-detail__img2::before {
+  padding-top: 100%; // 163/163 //
+  display: block;
+  content: "";
+}
+
+.p-sub-works-detail__img2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.p-sub-works-detail__img2::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -62,6 +110,9 @@
 .js-gallery-thumbs .swiper-slide {
   max-width: rem(168);
   width: 100%;
+  @include mq(md) {
+    max-width: rem(93);
+  }
 }
 
 .p-sub-works__body {

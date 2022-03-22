@@ -47,8 +47,8 @@ var slider = new Swiper ('.js-gallery-slider', {
 //サムネイルスライド
 var thumbs = new Swiper ('.js-gallery-thumbs', {
   slidesPerView: 'auto',
-  spaceBetween: 10,
-  centeredSlides: true,
+  spaceBetween: 8,
+  // centeredSlides: true,
   loop: true,
   slideToClickedSlide: true,
 });
