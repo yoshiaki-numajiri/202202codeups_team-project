@@ -119,5 +119,6 @@
 .c-btn--submit:hover {
   @include mq() {
     color: $white;
+    opacity: 0.8;
   }
 }
