@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-pager2 {
+  // clear: both;
+  text-align: center;
+}
+
+.p-pager2__btn {
+  display: inline-block;
+  width: rem(71);
+  padding-top: rem(3);
+  padding-bottom: rem(3);
+  color: $white;
+  border: 1px solid $white;
+  white-space: nowrap;
+  line-height: 1;
+  transition: 0.2s ease-in-out;
+  text-transform: uppercase;
+}
+
+.p-pager2__btn:not(:last-child) {
+  margin-right: rem(48);
+}
+
+.p-pager2__btn:hover {
+  @include mq(md) {
+    color: $black3;
+    background-color: $white;
+    border-color: $white;
+  }
+}
