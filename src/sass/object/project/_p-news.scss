@@ -9,23 +9,8 @@
 
 .p-news__information {
   @include mq() {
-    width: 100% * math.div(272, strip-unit($l-inner--middle) );
+    width: 100% * math.div( 272, 860 );
     margin-right: rem(16);
-  }
-}
-
-.p-news__date {
-  display: inline-block;
-  margin-right: rem(32);
-}
-
-.p-news__category {
-  display: inline-block;
-  padding: rem(6) rem(22);
-  border: 1px solid $white;
-  font-size: rem(14);
-  @include mq() {
-    height: fit-content;
   }
 }
 
@@ -38,7 +23,6 @@
     flex: 1;
     margin-top: 0;
     padding-top: rem(7);
-
   }
 }
 

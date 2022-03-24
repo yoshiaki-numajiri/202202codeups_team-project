@@ -23,7 +23,7 @@
   }
 }
 
-.p-header-nav__list {
+.p-header-nav__items {
   display: block;
   display: flex;
   flex-direction: column;
@@ -40,6 +40,10 @@
 
 .p-header-nav__item {
   height: 100%;
+  width: 100%;
+  @include mq() {
+    width: auto;
+  }
 }
 
 .p-header-nav__item--white a {

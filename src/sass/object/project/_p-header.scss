@@ -49,4 +49,7 @@
 .p-header__nav.is-open {
   display: block;
   background-color: $black1;
+  @include mq() {
+    background-color: transparent;
+  }
 }

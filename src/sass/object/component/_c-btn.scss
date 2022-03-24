@@ -2,33 +2,32 @@
 @use "sass:math";
 
 .c-btn {
-  display: inline-block;
   position: relative;
   overflow: hidden;
-  vertical-align: top;
-  width: 100%;
-  vertical-align: top;
-}
-
-.c-btn--normal {
-  height: rem(50);
-  background-color: $black3;
-  border: 1px solid $white;
+  display: inline-block;
+  width: rem(335);
+  padding-top: rem(9);
+  padding-bottom: rem(9);
   font-size: rem(20);
   font-weight: $normal;
-  text-align: center;
-  line-height: math.div( 48, 20 );
   letter-spacing: math.div( 2em, 20 );
+  text-align: center;
   text-indent: math.div(2em, 20);
+  vertical-align: top;
   @include mq() {
-    height: rem(60);
-    // width: rem(360);
+    width: rem(360);
+    padding-top: rem(18);
+    padding-bottom: rem(18);
     font-size: rem(16);
     font-weight: $medium;
-    line-height: math.div( 58, 16);
     letter-spacing: math.div(2em, 16);
     text-indent: math.div(2em, 16);
   }
+}
+
+.c-btn--normal {
+  background-color: $black3;
+  border: 1px solid $white;
 }
 
 .c-btn--normal::before {
@@ -62,15 +61,14 @@
 .c-btn--pc-small {
   background-color: $black3;
   border: 1px solid $white;
-  @include txt(rem(20), 400, $white, center);
-  @include txt-option(rem(48), math.div(2em, 20));
   @include mq() {
-    height: rem(30);
-    // width: rem(134);
+    width: rem(134);
     background-color: $white;
     border: 0;
     color: $black0;
-    line-height: rem(30);
+    font-size: rem(16);
+    padding-top: rem(3);
+    padding-bottom: rem(3);
   }
 }
 
@@ -99,13 +97,7 @@
 .c-btn--submit {
   background-color: $white;
   border: 0;
-  @include txt(rem(20), 400, $black0, center);
-  @include txt-option(rem(50), math.div(2em, 20));
-  @include mq() {
-    height: rem(60);
-    // width: rem(360);
-    line-height: rem(60);
-  }
+  color: $black0;
 }
 
 .c-btn--submit::before {
@@ -127,5 +119,6 @@
 .c-btn--submit:hover {
   @include mq() {
     color: $white;
+    opacity: 0.8;
   }
 }

@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.p-sub-contact__inner {
+  @include mq(md) {
+    width: rem(700);
+  }
+}
+
+.p-sub-contact__content {
+  @include mq(md) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: rem(45);
+  }
+}
+
+.p-sub-contact__title {
+  @include txt(rem(14), $regular, $white, none);
+  @include txt-option(1.714, 0.05em); // 24/fsz14 0.7px/fsz20
+  margin-top: rem(32);
+  @include mq(md) {
+    line-height: 1.85;
+    text-align: right;
+    width: rem(142);
+    margin-top: 0;
+    margin-right: rem(24);
+  }
+}
+
+.p-sub-contact__btn {
+  margin-top: rem(48);
+  text-align: center;
+  @include mq(md) {
+    margin-top: rem(56);
+  }
+}

@@ -1,0 +1,115 @@
+@use "global" as *;
+@use "sass:math";
+
+.p-blog-article__inner.l-inner {
+  @include mq() {
+    max-width: 800px + strip-unit($padding-pc) * 2;
+  }
+}
+
+.p-blog-article__title {
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: math.div(0.4em, 20);
+  line-height: math.div(35, 20);
+  @include mq() {
+    font-size: rem(23);
+    font-weight: $medium;
+    letter-spacing: math.div(0.4em, 23);
+    line-height: math.div(35, 23);
+  }
+}
+
+.p-blog-article__information {
+  margin-top: rem(8);
+  @include mq() {
+    margin-top: rem(24);
+  }
+}
+
+.p-blog-article img {
+  width: 100vw;
+  max-width: 100vw;
+  margin-top: rem(16);
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  @include mq() {
+    width: 100%;
+    margin-top: rem(32);
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.p-blog-article p {
+  margin-top: rem(16);
+  letter-spacing: math.div( 0.4em, 16 );
+  line-height: math.div( 35, 16 );
+  @include mq() {
+    margin-top: rem(24);
+  }
+}
+
+.p-blog-article h2 {
+  margin-top: rem(16);
+  padding-left: rem(9);
+  border-left: rem(3) solid $gray;
+  font-size: rem(20);
+  font-weight: $regular;
+  letter-spacing: math.div(2em, 20);
+  @include mq() {
+    margin-top: rem(24);
+  }
+}
+
+.p-blog-article h3 {
+  position: relative;
+  display: inline-block;
+  margin-top: rem(16);
+  padding-bottom: rem(3);
+  font-size: rem(18);
+  font-weight: $regular;
+  letter-spacing: math.div(2em, 18);
+  @include mq() {
+    margin-top: rem(24);
+  }
+}
+
+.p-blog-article h3::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: "";
+  height: rem(3);
+  background: linear-gradient(90deg, $accent-color2 0%, $accent-color2 33.6405529%, $white 66.3594471%, $white 100%);
+}
+
+.p-blog-article ul {
+  margin-top: rem(16);
+  letter-spacing: math.div(0.4em, 16);
+  line-height: math.div(35, 16);
+  @include mq() {
+    margin-top: rem(24);
+  }
+
+}
+
+.p-blog-article ul li::before {
+  content: "・";
+}  
+
+.p-blog-article ol {
+  margin-top: rem(16);
+  counter-reset: number 0;
+  letter-spacing: math.div(0.4em, 16);
+  line-height: math.div(35, 16);
+  @include mq() {
+    margin-top: rem(24);
+  }
+}
+
+.p-blog-article ol li::before {
+  counter-increment: number 1;
+  content: counter(number) " ";
+}

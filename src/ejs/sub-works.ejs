@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <header class="l-header">
+      <%- include('./common/_p-header') %>
+    </header>
+  <%- include('./project/_p-sub-mv',{pageTitle:'制作実績'}) %>
+
+  <div class="l-breadcrumb">
+      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'制作実績', thirdPage:''}) %>
+  </div>
+
+  <main class="l-sub-works">
+    <%- include('./project/_p-sub-works') %>
+  </main>
+
+  <div class="l-pager">
+    <%- include('./project/_p-pager') %>
+  </div>
+  
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+  
+  <%- include('./common/_p-footer') %>
+</body>
+</html>

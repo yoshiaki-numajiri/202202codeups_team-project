@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.p-sub-blog-archive__main {
+  width: 100%;
+}
+
+.p-sub-blog-archive__items {
+  margin-top: rem(37);
+  @include mq() {
+    margin-top: rem(40);
+  }
+}

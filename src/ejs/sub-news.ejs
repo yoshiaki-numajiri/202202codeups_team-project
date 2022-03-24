@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <%- include('./common/_head') %>
+  <body>
+    <header class="l-header">
+      <%- include('./common/_p-header') %>
+    </header>
+  <%- include('./project/_p-sub-mv',{pageTitle:'お知らせ'}) %>
+
+  <div class="l-breadcrumb">
+      <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'お知らせ一覧', thirdPage:''}) %>
+  </div>
+
+  <main class="l-sub-news">
+      <%- include('./project/_p-sub-news') %>
+  </main>
+
+  <div class="l-pager">
+    <%- include('./project/_p-pager') %>
+  </div>
+  
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+  
+  <%- include('./common/_p-footer') %>
+</body>
+</html>

@@ -6,233 +6,33 @@
       <%- include('./common/_p-header') %>
     </header>
 
-    <section class="p-mv js-mv">
-      <div class="p-mv__inner">
-        <div class="swiper mySwiper u-mobile">
-          <div class="p-mv__wrapper swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="p-mv__img swiper-img">
-                <img src="images/top/mv-sp_1.jpg" alt="">
-              </div>
-              <div class="p-mv__block">
-                <h2 class="p-mv__title">CodeUps_TeamProject</h2>
-                <span class="p-mv__subtitle">team_yoshitoshi</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-mv__img swiper-img">
-                <img src="images/top/mv-sp_2.jpg" alt="">
-              </div>
-              <div class="p-mv__block">
-                <h2 class="p-mv__title">CodeUps_TeamProject</h2>
-                <span class="p-mv__subtitle">team_yoshitoshi</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-mv__img swiper-img">
-                <img src="images/top/mv-sp_3.jpg" alt="">
-              </div>
-              <div class="p-mv__block">
-                <h2 class="p-mv__title">CodeUps_TeamProject</h2>
-                <span class="p-mv__subtitle">team_yoshitoshi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        <div class="swiper mySwiper u-desktop">
-          <div class="p-mv__wrapper swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="p-mv__img swiper-img">
-                <img src="images/top/mv_1.jpg" alt="">
-              </div>
-              <div class="p-mv__block">
-                <h2 class="p-mv__title">CodeUps_TeamProject</h2>
-                <span class="p-mv__subtitle">team_yoshitoshi</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-mv__img swiper-img">
-                <img src="images/top/mv_2.jpg" alt="">
-              </div>
-              <div class="p-mv__block">
-                <h2 class="p-mv__title">CodeUps_TeamProject</h2>
-                <span class="p-mv__subtitle">team_yoshitoshi</span>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="p-mv__img swiper-img">
-                <img src="images/top/mv_3.jpg" alt="">
-              </div>
-              <div class="p-mv__block">
-                <h2 class="p-mv__title">CodeUps_TeamProject</h2>
-                <span class="p-mv__subtitle">team_yoshitoshi</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%- include('./project/_p-top-mv') %>
+
+    <section class="l-top-news">
+      <%- include('./project/_p-top-news') %>
     </section>
 
-    <!-- <section class="l-news">
-      <%- include('./project/_p-news',{datetime:'2020-07-20', date:'2020.07.20', newsCategory:'お知らせ', link:'#', newsTitle:'記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。'}) %>
-      <div class="p-news__btn">
-        <%- include('./component/_c-btn',{text:'すべて見る', link:'#', btntype:'pcSmall'}) %>
-      </div>
-    </section> -->
-
-    <section class="l-top-news p-top-news">
-      <div class="p-top-news__inner">
-        <div class="p-top-news__wrapper">
-          <div class="p-top-news__items">
-            <div class="p-top-news__item">
-              <div class="p-top-news-info">
-                <time datetime="2020-07-20" class="p-top-news-info__date">2020.07.20</time>
-                <div class="p-top-news-info__label">
-                  <span class="p-top-news-info__label-category">お知らせ</span>
-                </div>
-              </div>
-              <div class="p-top-news-info__body">
-                <a href="#" class="p-top-news-info__text">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a>
-              </div>
-            </div>
-          </div>
-          <div class="p-top-news__btn">
-            <%- include('./component/_c-btn',{text:'すべて見る', link:'#', btntype:'pcSmall'}) %>
-          </div>
-        </div>
-      </div>
+    <section class="l-top-content">
+      <%- include('./project/_p-top-content') %>
     </section>
 
-    <section class="l-top-content p-top-content">
-      <div class="p-top-content__inner">
-      <div class="p-top-content__line-top"></div>
-      <div class="p-top-content__wrapper">
-        <div class="p-top-content__head">
-          <%- include('./component/_c-section-title',{ja:'事業内容', en:'Content'}) %>
-        </div>
-      </div>
-        <div class="p-top-content__items">
-          <div class="p-top-content__item p-content-box">
-            <figure class="p-content-box__img">
-            <img src="images/top/content.jpg" alt="">
-            </figure>
-            <div class="p-content-box__body">
-              <a href="#" class="p-content-box__title">経営理念ページへ</a>
-            </div>
-          </div>
-          <div class="p-top-content__item p-content-box">
-            <figure class="p-content-box__img">
-            <img src="images/top/content_1.jpg" alt="">
-            </figure>
-            <div class="p-content-box__body">
-              <a href="#" class="p-content-box__title">理念1へ</a>
-            </div>
-          </div>
-          <div class="p-top-content__item p-content-box">
-            <figure class="p-content-box__img">
-            <img src="images/top/content_2.jpg" alt="">
-            </figure>
-            <div class="p-content-box__body">
-              <a href="#" class="p-content-box__title">理念2へ</a>
-            </div>
-          </div>
-          <div class="p-top-content__item p-content-box">
-            <figure class="p-content-box__img">
-            <img src="images/top/content_3.jpg" alt="">
-            </figure>
-            <div class="p-content-box__body">
-              <a href="#" class="p-content-box__title">理念3へ</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="l-top-works">
+      <%- include('./project/_p-top-works') %>
     </section>
 
-    <section class="l-top-works p-top-works">
-      <div class="p-top-works__inner">
-        <div class="p-top-works__head">
-          <%- include('./component/_c-section-title',{ja:'制作実績', en:'Works'}) %>
-        </div>
-        <div class="p-top-works__wrapper">
-          <div class="p-top-works__swiper">
-            <div class="swiper2 mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <figure class="p-top-works__img slide-img">
-                  <img src="images/top/works_1.jpg" alt="">
-                  </figure>
-                </div>
-                <div class="swiper-slide">
-                  <figure class="p-top-works__img slide-img">
-                  <img src="images/top/works_2.jpg" alt="">
-                  </figure>
-                </div>
-                <div class="swiper-slide">
-                  <figure class="p-top-works__img slide-img">
-                  <img src="images/top/works_3.jpg" alt="">
-                  </figure>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-pagination"></div>
-          </div>
-          <div class="p-top-works__body">
-            <h3 class="p-top-works__text-title c-text-title">メインタイトルが入ります</h3>
-            <p class="p-top-works__text c-text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <div class="p-top-works__btn">
-              <%- include('./component/_c-btn',{text:'詳しく見る', link:'#', btntype:'normal'}) %>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="l-top-overview">
+      <%- include('./project/_p-top-overview') %>
     </section>
 
-    <section class="l-top-overview p-top-overview">
-      <div class="p-top-overview__inner">
-      <div class="p-top-overview__line-bottom"></div>
-        <div class="p-top-overview__head">
-          <%- include('./component/_c-section-title',{ja:'企業概要', en:'Overview'}) %>
-        </div>
-        <div class="p-top-overview__wrapper">
-          <figure class="p-top-overview__img">
-          <img src="images/top/overview.jpg" alt="">
-          </figure>
-          <div class="p-top-overview__body">
-            <h3 class="p-top-overview__text-title">メインタイトルが入ります</h3>
-            <p class="p-top-overview__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
-            <div class="p-top-overview__btn">
-              <%- include('./component/_c-btn',{text:'詳しく見る', link:'#', btntype:'normal'}) %>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="l-top-blog p-top-blog">
-      <div class="p-top-blog__inner l-inner">
-        <div class="p-top-blog__head">
-          <%- include('./component/_c-section-title',{ja:'ブログ', en:'Blog'}) %>
-        </div>
-        <div class="p-top-blog__wrapper">
-          <%- include('./project/_p-cards',{numberNew:'1', number:'2'}) %>
-        </div>
-        <div class="p-top-blog__btn">
-          <%- include('./component/_c-btn',{text:'詳しく見る', link:'#', btntype:'normal'}) %>
-        </div>
-      </div>
+    <section class="l-top-blog">
+      <%- include('./project/_p-top-blog') %>
     </section>
 
     <section class="l-contact">
       <%- include('./project/_p-contact') %>
     </section>
 
-    <footer class="l-footer">
       <%- include('./common/_P-footer') %>
-    </footer>
-  <%#
-  元々のコードを残しておくと、エラーが出てしまうため削除しました。
-  %>
-  
+    
   </body>
 </html>

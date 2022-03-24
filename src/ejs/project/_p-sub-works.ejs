@@ -1,0 +1,18 @@
+<div class="p-sub-works">
+  <div class="p-sub-works__inner l-inner">
+    <div class="p-sub-works__category">
+      <%- include('../project/_p-category') %>
+    </div>
+    <ul class="p-sub-works__items">
+      <% for (var i=0; i < 6; i++) { %>
+        <li class="p-sub-works__item">
+          <%- include('../project/_p-works-card',{link:'sub-works-detail.html', imgSrc:'./images/works/works-item__image0001.jpg', imgAlt:'制作実績画像', category:'カテゴリ1', title:'CodeUps株式会社'}) %>
+          </li>
+    
+        <% } %>
+      </ul>
+    <!-- <div class="l-pager">
+      <%#- include('../project/_p-pager') %>
+    </div> -->
+  </div>
+</div>

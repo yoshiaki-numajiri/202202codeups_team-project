@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+<body>
+  <header class="l-header">
+    <%- include('./common/_p-header') %>
+  </header>
+
+  <%- include('./project/_p-sub-mv',{pageTitle:'企業概要'}) %>
+
+  <div class="l-breadcrumb">
+    <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'企業概要', thirdPage:''}) %>
+  </div>
+
+  <div class="l-sub-overview">
+    <%- include('./project/_p-sub-overview') %>
+  </div>
+
+  <div class="l-map">
+    <%- include('./project/_p-map') %>
+  </div>
+
+  <div class="l-contact">
+    <%- include('./project/_p-contact') %>
+  </div>
+
+  <%- include('./common/_p-footer') %>
+</body>
+
+</html>

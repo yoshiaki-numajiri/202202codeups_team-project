@@ -11,9 +11,6 @@
 
 .p-top-works__head {
   position: relative;
-  @include mq(md) {
-    margin-top: rem(213);
-  }
 }
 
 .p-top-works__wrapper {
@@ -81,7 +78,7 @@
 .p-top-works__text {
   margin-top: rem(24);
   @include txt(rem(16), $regular, $white, left);
-  @include txt-option(auto, 0.125em); // 2px/fsz16
+  @include txt-option(1.5, 0.125em); // 2px/fsz16
   @include mq(md) {
     @include txt-option(2.188, 0.03em); // 35/fsz16,0.5px/fsz16
   }
@@ -89,10 +86,7 @@
 
 .p-top-works__btn {
   margin-top: rem(26);
-  text-align: center;
   @include mq(md) {
     margin-top: rem(48);
-    display: flex;
-    justify-content: left;
   }
 }

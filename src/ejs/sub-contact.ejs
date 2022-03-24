@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<%- include('./common/_head') %>
+
+<body>
+  <header class="l-header">
+    <%- include('./common/_p-header') %>
+  </header>
+  
+    <%- include('./project/_p-sub-mv',{pageTitle:'お問い合わせ'}) %>
+
+  <div class="l-breadcrumb">
+    <%- include('./project/_p-breadcrumb',{link:'#', seccondPage:'お問い合わせ', thirdPage:''}) %>
+  </div>
+
+  <div class="l-sub-contact">
+    <%- include('./project/_p-sub-contact') %>
+  </div>
+
+  <div class="l-footer">
+    <%- include('./common/_p-footer') %>
+  </div>
+
+</body>
+</html>
