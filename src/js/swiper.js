@@ -48,9 +48,15 @@ var slider = new Swiper ('.js-gallery-slider', {
 var thumbs = new Swiper ('.js-gallery-thumbs', {
   slidesPerView: 'auto',
   spaceBetween: 8,
-  // centeredSlides: true,
+  centeredSlides: true,
   loop: true,
   slideToClickedSlide: true,
+  breakpoints: {
+    // 768px以上の場合
+    768: {
+      centeredSlides: false,
+    }
+  }
 });
 
 //3系
