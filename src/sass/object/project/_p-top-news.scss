@@ -22,12 +22,8 @@
 
 .p-top-news__btn {
   margin-top: rem(28);
-  width: rem(335);
-  margin-left: auto;
-  margin-right: auto;
   @include mq(md) {
     margin-top: rem(0);
-    width: 100% * math.div(134, 1042);
     padding-top: rem(3);
   }
 }
